@@ -1,6 +1,13 @@
 body{
     background-color: #A97F67;
 }
+
+/* main{
+    display: grid;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
+    grid-template-rows: repeat(9, 100px);
+} */
+
 h1 {
     font-size: 30px;
     font-family: "hoss-round", sans-serif;
