@@ -18,7 +18,13 @@ p{
     font-style: normal;
 }
 
-iframe{
+#spotify{
     grid-column: 3 / span 10;
     grid-row: 6 / span 6;
 }
+
+/* #insta{
+    grid-column: 3 / span 10;
+    grid-row: 10;
+} */
+
