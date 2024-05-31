@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gleis50.ch | Startseite</title>
+    <link rel="stylesheet" href="css/allgemein.css">
+    <link rel="stylesheet" href="css/kontaktformular.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tpw4fhi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nvb5pwa.css">
+</head>
+<body>
+
+    <main>
+        <img src="bilder/Schild_Homepage.png" id="SchildStartseite" alt="Schild_Homepage">
+
+        <h2>Kontakt</h2>
+
+        <div class="kontaktformularContainer">
+            <form id="Kontaktformular">
+                <label for="name">di Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label>Werum wottsch üs kontaktiere?</label>
+                <div class="icon-auswahl">
+                    <input type="radio" id="frag" name="Frag" value="1" required>
+                    <label for="frag"><img src="bilder/Icons_TEST/fragezeichen_TEST.png" alt="Fragezeichen"></label>
+
+                    <input type="radio" id="idee" name="Idee" value="2" required>
+                    <label for="idee"><img src="bilder/Icons_TEST/idee_TEST.png" alt="Idee"></label>
+
+                    <input type="radio" id="feedback" name="Feedback" value="3" required>
+                    <label for="feedback"><img src="bilder/Icons_TEST/feedback_TEST.png" alt="Feedback"></label>
+
+                    <input type="radio" id="nachricht" name="Nachricht" value="4" required>
+                    <label for="nachricht"><img src="bilder/Icons_TEST/nachricht_TEST.png" alt="Nachricht"></label>
+
+                    <input type="radio" id="shop" name="Shop" value="5" required>
+                    <label for="shop"><img src="bilder/Icons_TEST/einkaufstasche_TEST.png" alt="Shop"></label>
+                </div>
+
+                <label for="email">Dini E-Mail-Adrässe:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="nachricht">Dini Nachricht:</label>
+                <textarea type="nachricht" id="nachricht" name="nachricht" required>
+
+                <button type="submit">Absände</button>
+
+            </form>
+
+        </div>
+        <script src="kontaktformular.js"></script>
+
+    </main>
+
+</body>
+</html>
