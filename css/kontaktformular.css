@@ -16,9 +16,15 @@ main {
     text-align: center;
 }
 
+.schild-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #SchildStartseite {
-    height: auto;
     width: 80%;
     grid-column: 2 / span 12;
     /*grid-row: 2 / span 14;*/
@@ -59,6 +65,15 @@ p{
 }
 
 /*FORMULAR*/
+#kontaktText{
+    position: absolute;
+    font-size: 130px;
+    font-family: "hoss-round", sans-serif;
+    font-weight: 800;
+    color: rgb(204, 153, 153);
+
+}
+
 .kontaktformularContainer {
     background-color: white;
     padding: 20px;
