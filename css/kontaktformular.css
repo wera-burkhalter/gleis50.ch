@@ -104,7 +104,6 @@ p{
     margin-right: 250px; 
 }
 
-
 /* Definition der Animation */
 @keyframes move {
     from {
@@ -113,4 +112,106 @@ p{
     to {
         transform: translateX(-100%);
     }
+}
+
+/* *** */
+
+/*KONTAKTFORMULAR*/
+.formular {
+    grid-area: 23 / 5 / span 7 / span 9;
+}
+
+form{
+    max-width: 80%;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #c49b9a;
+}
+
+input{
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4PX 30PX rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    color: #c49b9a;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8vw;
+}
+
+select{
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    color: #c49b9a;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8vw;
+    margin-left: 0;
+}
+
+textarea{
+    border-radius: 20px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    resize: none;
+
+    color: #c49b9a;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8vw;
+}
+
+option{
+    border-radius: 20px;
+    color: black;
+    font-family: "pill-gothic-600mg", sans-serif;
+}
+
+button{
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: "pill-gothic-600mg", sans-serif;
+    width: auto;
+    height: auto;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-size: 18px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 2.5%;
+    padding: 12px 20px;
+    border-radius: 20px;
+    display: none;
 }
