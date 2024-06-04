@@ -57,7 +57,7 @@ p{
 #text{
 
     grid-column: 3 / span 10;
-    grid-row: 26 / span 1;
+    grid-row: 40 / span 1;
     text-align: center;
     font-size: 20px;
     font-family: "pill-gothic-600mg", sans-serif;
@@ -118,7 +118,7 @@ p{
 
 /*KONTAKTFORMULAR*/
 .formular {
-    grid-area: 23 / 5 / span 7 / span 9;
+    grid-area: 25 / 5 / span 10 / span 9;
 }
 
 form{
@@ -131,9 +131,8 @@ form{
 
 input{
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4PX 30PX rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    background: #5f7e95;
+    /*backdrop-filter: blur(5px);*/
     border: 1px solid rgba(255, 255, 255, 0.3);
 
     color: #c49b9a;
@@ -145,9 +144,8 @@ input{
 
 select{
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    background: #5f7e95;
+    /*backdrop-filter: blur(5px);*/
     border: 1px solid rgba(255, 255, 255, 0.3);
 
     color: #c49b9a;
@@ -161,9 +159,9 @@ select{
 textarea{
     border-radius: 20px;
     height: 200px;
-    background: rgba(255, 255, 255, 0.2);
+    background: #5f7e95;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    /*backdrop-filter: blur(5px);*/
     border: 1px solid rgba(255, 255, 255, 0.3);
     resize: none;
 
@@ -175,14 +173,14 @@ textarea{
 }
 
 option{
-    border-radius: 20px;
+    border-radius: 199px;
     color: black;
     font-family: "pill-gothic-600mg", sans-serif;
 }
 
 button{
     border-radius: 20px;
-    background-color: white;
+    background-color: #5f7e95;
     border: 1px solid rgba(255, 255, 255, 0.3);
     font-family: "pill-gothic-600mg", sans-serif;
     width: auto;
