@@ -1,33 +1,23 @@
+/*ou im allgemein.css (body& main)*/
 body{
+    background-color: #A97F67;
     margin: 0;
     padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
+}
+
+main{
     display: grid;
-    grid-template-columns: 40px repeat(12,1fr) 40px;
+    grid-template-columns: 40px repeat(12, 1fr) 40px;
     grid-auto-rows: 50px;
-
 }
 
-main {
-    grid-column: 2 / span 12; /* Das Formular über die mittleren 12 Spalten erstrecken */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.schild-container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #SchildStartseite {
-    width: 80%;
+    height: 110%;
     grid-column: 2 / span 12;
-    /*grid-row: 2 / span 14;*/
+    grid-row: 2 / span 14;
     margin: auto;
 }
 
@@ -64,87 +54,63 @@ p{
     font-style: normal;
 }
 
-/*FORMULAR*/
-#kontaktText{
-    position: absolute;
-    font-size: 130px;
-    font-family: "hoss-round", sans-serif;
-    font-weight: 800;
-    color: rgb(204, 153, 153);
+#text{
 
+    grid-column: 3 / span 10;
+    grid-row: 26 / span 1;
+    text-align: center;
+    font-size: 20px;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.kontaktformularContainer {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Volle Breite des Containers */
-    max-width: 600px; /* Maximalbreite des Formulars */
-    margin: auto; /* Zentriert den Container horizontal */
+
+/*BLAUER BALKEN*/
+/* Container für das Grid-Layout */
+.container {
+    display: grid; /* Aktiviert CSS Grid Layout */
+    grid-template-rows: repeat(19, 1fr); /* Erstellt 19 gleich hohe Zeilen */
+    height: 100vh; /* Höhe des Containers auf 100% setzen */
+    width: 100vw; /* Breite des Containers auf 100% setzen */
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Styling des blauen Balkens */
+.blue-bar {
+    grid-row: 19 / 20;
+    background-color: #5f7e95; 
+    width: 100%; /* Setzt die Breite auf 100%, um die ganze Breite zu decken */
+    height: 50px; /* Höhe des Balkens */
+    display: flex; /* Aktiviert Flexbox für zentrierte Ausrichtung */
+    align-items: center; 
+    overflow: hidden; /* Verhindert, dass der Text überläuft */
 }
 
-label {
-    margin-top: 10px;
-    text-align: left;
-    width: 100%;
+/* Styling des Texts, der sich bewegen soll */
+.moving-text {
+    display: flex; /* Aktiviert Flexbox innerhalb des Textcontainers */
+    color: #c49b9a;
+    /*Schrift*/
+    font-size: 20px;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    white-space: nowrap; /* Verhindert Zeilenumbruch */
+    animation: move 0s linear infinite; /* Animationseigenschaften */ /*HIE GSCHWINDIGKEIT VER
+    NDERE*/
+}
+.moving-text span {
+    margin-right: 250px; 
 }
 
-input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-}
 
-textarea {
-    height: 100px;
-}
-
-.icon-auswahl {
-    display: flex;
-    gap: 10px;
-    margin-top: 5px;
-    justify-content: center;
-}
-
-.icon-auswahl input {
-    display: none;
-}
-
-.icon-auswahl label {
-    cursor: pointer;
-}
-
-.icon-auswahl img {
-    width: 40px;
-    height: 40px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-}
-
-.icon-auswahl input:checked + label img {
-    border-color: #007bff;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+/* Definition der Animation */
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }

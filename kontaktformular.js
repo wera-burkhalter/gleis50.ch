@@ -1,4 +1,4 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+/* document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Verhindert das Absenden des Formulars
 
     // Formulardaten erfassen
@@ -19,4 +19,4 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     // Formular zurücksetzen
     document.getElementById('contactForm').reset();
-});
+}); */
