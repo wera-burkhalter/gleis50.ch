@@ -1,5 +1,6 @@
 body{
     background-color: #A97F67;
+    margin: 0;
 }
 
 main{
@@ -7,3 +8,131 @@ main{
     grid-template-columns: 40px repeat(12, 1fr) 40px;
     grid-auto-rows: 50px;
 }
+
+
+
+
+#fahrenderZug {
+    grid-column: 1 / span 14;
+    grid-row: 65 / span 5;
+    position: relative;
+    overflow: hidden;
+}
+
+.zug {
+    position: absolute;
+    width: 150%; /* Breite des Zuges anpassen */
+    animation: moveZug 15s linear infinite;
+}
+
+@keyframes moveZug {
+    0% {
+        left: -100%; /* Startposition weiter links außerhalb des Bildschirms */
+    }
+    100% {
+        left: 100%; /* Endposition außerhalb des Bildschirms rechts */
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 10px; /* Abstand zwischen den Grid-Elementen */
+    padding: 20px; /* Innenabstand für den Footer */
+    background-color: #568098; /* Hintergrundfarbe für den Footer */
+    color: #CC9999;
+    font-family: "hoss-round", sans-serif;
+}
+
+#footerContent {
+    display: grid;
+    grid-column: 2 / span 8;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    align-items: center; /* Vertikale Ausrichtung der Texte */
+}
+
+.footerText {
+    font-size: 4vh;
+    text-align: center;
+    padding: 10px;
+    color: inherit; /* Erbt die Farbe des Elternteils */
+    text-decoration: none; /* Entfernt die Unterstreichung des Links */
+}
+
+.footerText:hover {
+    color: #A97F67; /* Farbe beim Hover */
+}
+
+#logoContainer {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#LogoFooter {
+    max-width: 100%;
+    height: auto;
+}
+
+#socialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    grid-column: 10 / span 3; /* Positioniert die Icons im Grid */
+    grid-row: 1 / span 1;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.socialLink {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMediaIcon {
+    height: 5vh;
+    max-width: 5vh; /* Einheitliche Breite für alle Icons */
+    margin: 0 5px; /* Abstand zwischen den Icons */
+    transition: opacity 0.3s ease;
+}
+
+.socialMediaIcon.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.socialLink:hover .socialMediaIcon {
+    opacity: 0;
+}
+
+.socialLink:hover .socialMediaIcon.hover {
+    opacity: 1;
+}
+
+#mail {
+    grid-column: 10 / span 3;
+    grid-row: 2 / span 1;
+    text-align: center;
+    color: #CC9999;
+    text-decoration: none;
+    font-size: 3vh;
+    margin-right: 10%;
+    margin-top: -10%; /* Reduzierter Abstand nach oben */
+}
+
+#mail:hover {
+    color: #A97F67; /* Farbe beim Hover */
+}
+
+
+
+
