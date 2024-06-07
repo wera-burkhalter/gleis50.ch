@@ -15,35 +15,25 @@
     <img src="bilder/Schild_Homepage.png" id="SchildStartseite" alt="Schild_Homepage">
     
     <h1>Kontakt</h1>
-    <!-- Container für das Grid Layout -->
-    <div class="container">
-        <!-- Blauer Balken -->
-        <div class="blue-bar">
-            <!-- Bewegender Text -->
-            <div class="moving-text">
-                <span>im Schnäuzug erwachsewärde</span>
-                <span>im Schnäuzug erwachsewärde</span>
-                <span>im Schnäuzug erwachsewärde</span>
-                <span>im Schnäuzug erwachsewärde</span>
-                <span>im Schnäuzug erwachsewärde</span>
-                <span>im Schnäuzug erwachsewärde</span>
-                <span>im Schnäuzug erwachsewärde</span>
-                <span>im Schnäuzug erwachsewärde</span>
-                <span>im Schnäuzug erwachsewärde</span>
-                <span>im Schnäuzug erwachsewärde</span>
-            </div>
-        </div>
-    </div>
+
+    <div id="bannerFarbe"></div>
+    <marquee id="bannerText" direction="right" behavior="scroll" scrollamount="5" scrolldelay="1" >
+        im Schnäuzug erwachsewärde -     
+        im Schnäuzug erwachsewärde -  
+        im Schnäuzug erwachsewärde  -  
+        im Schnäuzug erwachsewärde -   
+        im Schnäuzug erwachsewärde
+    </marquee>
 
     <div class="formular">
         <form action="/dein-server-endpunkt" method="post" class="form">
-            <label for="name">Name</label>
+            <label id="formularName" for="name">Name</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">E-Mail</label>
+            <label id="formularEMail" for="email">E-Mail</label>
             <input type="email" id="email" name="email" required>
-
-            <label for="reason">Grund der Kontaktaufnahme</label>
+            
+            <label id="formularGrund" for="reason">Grund der Kontaktaufnahme</label>
             <select id="reason" name="reason" required>
                 <option value="frage">Frage</option>
                 <option value="idee">Idee</option>
@@ -53,7 +43,7 @@
 
             </select>
 
-            <label for="message">Nachricht</label>
+            <label id="formularNachricht" for="message">Nachricht</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
             <button type="submit" onclick="showSucessMessage()">Absenden</button>
@@ -70,7 +60,6 @@
 
 
     </div>
-
 
     <p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos recusandae culpa molestiae, consequuntur quod praesentium magnam id dolor optio cupiditate, obcaecati corporis dolorum, iste vitae minus vel officiis at dignissimos.</p>
         
@@ -106,6 +95,5 @@
         </div>
         <a href="mailto:gleis50.ch@gmail.com" id="mail">gleis50.ch@gmail.com</a>
     </footer>
-
 </body>
 </html>

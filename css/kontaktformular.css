@@ -44,6 +44,24 @@ h2 {
     color: rgb(204, 153, 153);
 }
 
+/* BLAUER BANNER */
+#bannerFarbe {
+    background-color: #568098;
+    grid-column: 1 / span 14;
+    grid-row: 20 / span 1;
+}
+
+#bannerText {
+    color: #CC9999;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vh;
+    grid-column: 1 / span 14;
+    grid-row: 20 / span 1;
+    align-self: center;
+}
+
 p{
     grid-column: 3 / span 10;
     grid-row: 3 / span 3;
@@ -55,7 +73,6 @@ p{
 }
 
 #text{
-
     grid-column: 3 / span 10;
     grid-row: 40 / span 1;
     text-align: center;
@@ -65,60 +82,17 @@ p{
     font-style: normal;
 }
 
+#Chef{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
 
-/*BLAUER BALKEN*/
-/* Container für das Grid-Layout */
-.container {
-    display: grid; /* Aktiviert CSS Grid Layout */
-    grid-template-rows: repeat(19, 1fr); /* Erstellt 19 gleich hohe Zeilen */
-    height: 100vh; /* Höhe des Containers auf 100% setzen */
-    width: 100vw; /* Breite des Containers auf 100% setzen */
-}
-
-/* Styling des blauen Balkens */
-.blue-bar {
-    grid-row: 19 / 20;
-    background-color: #5f7e95; 
-    width: 100%; /* Setzt die Breite auf 100%, um die ganze Breite zu decken */
-    height: 50px; /* Höhe des Balkens */
-    display: flex; /* Aktiviert Flexbox für zentrierte Ausrichtung */
-    align-items: center; 
-    overflow: hidden; /* Verhindert, dass der Text überläuft */
-}
-
-/* Styling des Texts, der sich bewegen soll */
-.moving-text {
-    display: flex; /* Aktiviert Flexbox innerhalb des Textcontainers */
-    color: #c49b9a;
-    /*Schrift*/
-    font-size: 20px;
-    font-family: "pill-gothic-600mg", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    white-space: nowrap; /* Verhindert Zeilenumbruch */
-    animation: move 0s linear infinite; /* Animationseigenschaften */ /*HIE GSCHWINDIGKEIT VER
-    NDERE*/
-}
-.moving-text span {
-    margin-right: 250px; 
-}
-
-/* Definition der Animation */
-@keyframes move {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
 }
 
 /* *** */
 
 /*KONTAKTFORMULAR*/
 .formular {
-    grid-area: 25 / 5 / span 10 / span 9;
+    grid-area: 25 / 4 / span 10 / span 9;
 }
 
 form{
@@ -129,8 +103,17 @@ form{
     color: #c49b9a;
 }
 
+#formularName, #formularEMail, #formularGrund, #formularNachricht {
+    text-align: center; 
+    font-size: 50px;
+    font-family: "hoss-round", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(204, 153, 153);
+}
+
 input{
-    border-radius: 20px;
+    border-radius: 11.66px;
     background: #5f7e95;
     /*backdrop-filter: blur(5px);*/
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -139,7 +122,7 @@ input{
     font-family: "pill-gothic-600mg", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.8vw;
+    font-size: 1.8vw;
 }
 
 select{
@@ -169,7 +152,7 @@ textarea{
     font-family: "pill-gothic-600mg", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.8vw;
+    font-size: 1.8vw;
 }
 
 option{
