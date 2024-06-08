@@ -35,69 +35,63 @@
     <marquee id="bannerText" direction="right" behavior="scroll" scrollamount="5" scrolldelay="1" >
         im Schnäuzug erwachsewärde -     
         im Schnäuzug erwachsewärde -  
-        im Schnäuzug erwachsewärde  -  
+        im Schnäuzug erwachsewärde -  
         im Schnäuzug erwachsewärde -   
         im Schnäuzug erwachsewärde
     </marquee>
 
     <div class="formular">
-        <form action="/dein-server-endpunkt" method="post" class="form">
-            <label id="formularName" for="name">Name</label>
+        <form action="send_email.php"  method="post" class="form" onsubmit="return handleFormSubmit(event)">
+            
+            <label id="formularName" for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label id="formularEMail" for="email">E-Mail</label>
+            <label id="formularEMail" for="email">E-Mail:</label>
             <input type="email" id="email" name="email" required>
             
             <!-- Kontaktgrund Abschnitt -->
         <div class="contact-reason">
-            <label>Kontaktgrund:</label>
+            <label id="formularGrund" for="grund">Kontaktgrund:</label>
             <div class="icon-grid">
                 <!-- Icon-Optionen -->
-                <div class="icon-option">
+                <div class="icon-container">
                     <input type="radio" id="frage" name="kontaktgrund" value="frage">
                     <label for="frage">
-                        <img src="bilder/Icons_TEST/fragezeichen_TEST.png" alt="Frage">
-                        <span>Frage</span>
+                        <img src="bilder/Icons_Kontakt/Fragezeichen.png" class="KontaktIcon" alt="Fragezeichen Icon">
+                        <img src="bilder/Icons_Kontakt/Feedback_hover.png" class="KontaktIcon hover" alt="Frageichen Hover Icon">
+                        <span>Frag</span>
                     </label>
                 </div>
-                <div class="icon-option">
+                <div class="icon-container">
                     <input type="radio" id="idee" name="kontaktgrund" value="feedback">
                     <label for="idee">
-                        <img src="bilder/Icons_TEST/idee_TEST.png" 
-                        data-hover="bilder/Icons_TEST/idee_TEST.png"
-                        data-selected="bilder/Icons_TEST/idee_TEST.png"
-                        alt="Feedback">
+                        <img src="bilder/Icons_Kontakt/Idee.png" class="KontaktIcon" alt="Idee Icon">
+                        <img src="bilder/Icons_Kontakt/Idee_hover.png" class="KontaktIcon hover" alt="Idee Hover Icon">
+                        <span>Idee</span>
+                    </label>
+                </div>
+                <div class="icon-container">
+                    <input type="radio" id="feedback" name="kontaktgrund" value="problem">
+                    <label for="feedback">
+                        <img src="bilder/Icons_Kontakt/Feedback.png" class="KontaktIcon" alt="Feedback Icon">
+                        <img src="bilder/Icons_Kontakt/Feedback_hover.png" class="KontaktIcon hover" alt="Feedback Hover Icon">
                         <span>Feedback</span>
                     </label>
                 </div>
-                <div class="icon-option">
-                    <input type="radio" id="feedback" name="kontaktgrund" value="problem">
-                    <label for="feedback">
-                        <img src="bilder/Icons_TEST/feedback_TEST.png"
-                        data-hover="bilder/Icons_TEST/idee_TEST.png"
-                        data-selected="bilder/Icons_TEST/idee_TEST.png"
-                        alt="Problem">
-                        <span>Problem</span>
-                    </label>
-                </div>
-                <div class="icon-option">
+                <div class="icon-container">
                     <input type="radio" id="nachricht" name="kontaktgrund" value="problem">
                     <label for="nachricht">
-                        <img src="bilder/Icons_TEST/nachricht_TEST.png" 
-                        data-hover="bilder/Icons_TEST/idee_TEST.png"
-                        data-selected="bilder/Icons_TEST/idee_TEST.png"
-                        alt="Problem">
-                        <span>Problem</span>
+                        <img src="bilder/Icons_Kontakt/Nachricht.png" class="KontaktIcon" alt="Nachricht Icon">
+                        <img src="bilder/Icons_Kontakt/Nachricht_hover.png" class="KontaktIcon hover" alt="Nachricht Hover Icon">
+                        <span>Nachricht</span>
                     </label>
                 </div>
-                <div class="icon-option">
+                <div class="icon-container">
                     <input type="radio" id="shop" name="kontaktgrund" value="problem">
                     <label for="shop">
-                        <img src="bilder/Icons_TEST/einkaufstasche_TEST.png" 
-                        data-hover="bilder/Icons_TEST/idee_TEST.png"
-                        data-selected="bilder/Icons_TEST/idee_TEST.png"
-                        alt="Problem">
-                        <span>Problem</span>
+                        <img src="bilder/Icons_Kontakt/Shop.png" class="KontaktIcon" alt="Shop Icon">
+                        <img src="bilder/Icons_Kontakt/Shop_hover.png" class="KontaktIcon hover" alt="Shop Hover Icon">
+                        <span>Shop</span>
                     </label>
                 </div>
             </div>
@@ -106,23 +100,22 @@
             <label id="formularNachricht" for="message">Nachricht</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button type="submit" onclick="showSucessMessage()">Absenden</button>
+            <button type="submit">Absenden</button>
 
-            <div class="sucess-message" id="successMessage">
+            <div class="sucess-message" id="successMessage" style="display:none;">
                 Vielen Dank! Dein Formular wurde erfolgreich abgesendet.
             </div>
         </form>
-        <script>
+        <!--<script>
             function showSucessMessage() {
                 document.getElementById("successMessage").style.display = "block";
             }
-        </script>
+        </script> -->
 
 
     </div>
 
-    <p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos recusandae culpa molestiae, consequuntur quod praesentium magnam id dolor optio cupiditate, obcaecati corporis dolorum, iste vitae minus vel officiis at dignissimos.</p>
-        
+    
     <div id="fahrenderZug">
         <img class="zug" id="zugRosa" src="bilder/ZugRosa.png" alt="Bewegendes Bild eines Zuges">
     </div>
