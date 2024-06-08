@@ -15,22 +15,21 @@ main{
 
 
 #SchildStartseite {
-    height: 110%;
+    height: 90%;
     grid-column: 2 / span 12;
-    grid-row: 2 / span 14;
+    grid-row: 5 / span 12;
     margin: auto;
 }
 
 h1 {
     grid-column: 2 / span 12;
-    grid-row: 2 /span 3;
+    grid-row: 6 /span 5;
     text-align: center; 
-    font-size: 100px;
+    font-size: 128px;
     font-family: "hoss-round", sans-serif;
     font-weight: 800;
     font-style: normal;
-    color: rgb(204, 153, 153);
-
+    color: #CC9999;
 }
 
 h2 {
@@ -125,10 +124,10 @@ input{
     font-size: 1.8vw;
 }
 
-select{
+/*select{ -> hei mer nümme dinne
     border-radius: 20px;
     background: #5f7e95;
-    /*backdrop-filter: blur(5px);*/
+    backdrop-filter: blur(5px); -> ds eigentlech usblände
     border: 1px solid rgba(255, 255, 255, 0.3);
 
     color: #c49b9a;
@@ -137,7 +136,7 @@ select{
     font-style: normal;
     font-size: 0.8vw;
     margin-left: 0;
-}
+}*/
 
 textarea{
     border-radius: 20px;
@@ -155,11 +154,11 @@ textarea{
     font-size: 1.8vw;
 }
 
-option{
+/*option{
     border-radius: 199px;
     color: black;
     font-family: "pill-gothic-600mg", sans-serif;
-}
+}*/
 
 button{
     border-radius: 20px;
@@ -196,3 +195,69 @@ select {
     border-radius: 20px;
     display: none;
 }
+
+/*.contact-reason label { -> ke ahnig für was das steit
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}*/
+
+/* Kontaktgrund */
+.icon-grid {
+    display: flex; /* Grid-Layout verwenden */
+    justify-content: space-around; /* Zentriert die Grid-Elemente */
+    gap: 10px; /* Abstand zwischen den Grid-Elementen */
+}
+
+.icon-option {
+    text-align: center; /* Zentriert den Inhalt innerhalb des Grid-Elements */
+}
+
+.icon-option input {
+    display: none; /* Versteckt das eigentliche Radio-Input */
+}
+
+.icon-option label {
+    cursor: pointer; /* Ändert den Mauszeiger bei Hover*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent; /* Standard: keine sichtbare Umrandung */
+    padding: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Übergang für die Randfarbe */
+}
+
+.icon-option label:hover,
+.icon-option input:checked + label {
+    border-color: #007BFF; /* Blaue Umrandung bei Hover oder wenn ausgewählt */
+}
+
+.icon-option img {
+    max-width: 50px; /* Maximale Breite der Icons */
+    margin-bottom: 5px; /* Abstand unterhalb des Icons */
+}
+
+/*weras züg kopiert*/
+/*.einkaufstascheIcon {
+    height: 5vh;
+    max-width: 5vh; /* Einheitliche Breite für alle Icons
+    margin: 0 5px; /* Abstand zwischen den Icons
+    transition: opacity 0.3s ease;
+}*/
+
+/*.einkaufstascheIcon.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}*/
+
+/*.socialLink:hover .socialMediaIcon {
+    opacity: 0;
+}*/
+
+/*.socialLink:hover .socialMediaIcon.hover {
+    opacity: 1;
+}*/
+

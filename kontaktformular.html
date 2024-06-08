@@ -9,12 +9,27 @@
     <link rel="stylesheet" href="https://use.typekit.net/tpw4fhi.css">
     <link rel="stylesheet" href="https://use.typekit.net/nvb5pwa.css">
 </head>
+
+<header>
+    <div id="menu">
+        <div id="left-menu">
+            <a class="headerLinks" href="startseite.html">START</a>
+            <a class="headerLinks" href="allefolgen.html">AUI FOUGE</a>
+        </div>
+        <img src="bilder/Logo_Gleis50_2024.png" id="Logo" alt="gleis50_logo">
+        <div id="right-menu">
+            <a class="headerLinks" href="ueberuns.html">ÜBER ÜS</a>
+            <a class="headerLinks" href="kontaktformular.html">KONTAKT</a>
+        </div>
+    </div>
+</header>
+
 <body>
 
     <main>
-    <img src="bilder/Schild_Homepage.png" id="SchildStartseite" alt="Schild_Homepage">
+        <img src="bilder/Schild_Homepage.png" id="SchildStartseite" alt="Schild_Homepage">
     
-    <h1>Kontakt</h1>
+        <h1>KONTAKT</h1>
 
     <div id="bannerFarbe"></div>
     <marquee id="bannerText" direction="right" behavior="scroll" scrollamount="5" scrolldelay="1" >
@@ -33,15 +48,60 @@
             <label id="formularEMail" for="email">E-Mail</label>
             <input type="email" id="email" name="email" required>
             
-            <label id="formularGrund" for="reason">Grund der Kontaktaufnahme</label>
-            <select id="reason" name="reason" required>
-                <option value="frage">Frage</option>
-                <option value="idee">Idee</option>
-                <option value="feedback">Feedback</option>
-                <option value="sonstiges">Sonstiges</option>
-                <option value="shop">Shop</option>
-
-            </select>
+            <!-- Kontaktgrund Abschnitt -->
+        <div class="contact-reason">
+            <label>Kontaktgrund:</label>
+            <div class="icon-grid">
+                <!-- Icon-Optionen -->
+                <div class="icon-option">
+                    <input type="radio" id="frage" name="kontaktgrund" value="frage">
+                    <label for="frage">
+                        <img src="bilder/Icons_TEST/fragezeichen_TEST.png" alt="Frage">
+                        <span>Frage</span>
+                    </label>
+                </div>
+                <div class="icon-option">
+                    <input type="radio" id="idee" name="kontaktgrund" value="feedback">
+                    <label for="idee">
+                        <img src="bilder/Icons_TEST/idee_TEST.png" 
+                        data-hover="bilder/Icons_TEST/idee_TEST.png"
+                        data-selected="bilder/Icons_TEST/idee_TEST.png"
+                        alt="Feedback">
+                        <span>Feedback</span>
+                    </label>
+                </div>
+                <div class="icon-option">
+                    <input type="radio" id="feedback" name="kontaktgrund" value="problem">
+                    <label for="feedback">
+                        <img src="bilder/Icons_TEST/feedback_TEST.png"
+                        data-hover="bilder/Icons_TEST/idee_TEST.png"
+                        data-selected="bilder/Icons_TEST/idee_TEST.png"
+                        alt="Problem">
+                        <span>Problem</span>
+                    </label>
+                </div>
+                <div class="icon-option">
+                    <input type="radio" id="nachricht" name="kontaktgrund" value="problem">
+                    <label for="nachricht">
+                        <img src="bilder/Icons_TEST/nachricht_TEST.png" 
+                        data-hover="bilder/Icons_TEST/idee_TEST.png"
+                        data-selected="bilder/Icons_TEST/idee_TEST.png"
+                        alt="Problem">
+                        <span>Problem</span>
+                    </label>
+                </div>
+                <div class="icon-option">
+                    <input type="radio" id="shop" name="kontaktgrund" value="problem">
+                    <label for="shop">
+                        <img src="bilder/Icons_TEST/einkaufstasche_TEST.png" 
+                        data-hover="bilder/Icons_TEST/idee_TEST.png"
+                        data-selected="bilder/Icons_TEST/idee_TEST.png"
+                        alt="Problem">
+                        <span>Problem</span>
+                    </label>
+                </div>
+            </div>
+        </div>
 
             <label id="formularNachricht" for="message">Nachricht</label>
             <textarea id="message" name="message" rows="4" required></textarea>
