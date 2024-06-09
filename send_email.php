@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Formularwerte abrufen
+    // Formularwerte abrufen und validieren
     $kontaktgrund = htmlspecialchars($_POST['kontaktgrund']);
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
@@ -21,15 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // E-Mail senden
     if (mail($to, $subject, $email_content, $headers)) {
-        echo "<script>
-                alert('Vielen Dank! Deine Nachricht wurde gesendet.');
-                window.location.href = 'kontaktformular.html';
-              </script>";
+        echo "success"; // Erfolgsnachricht zurückgeben
     } else {
-        echo "<script>
-                alert('Entschuldigung, es gab ein Problem beim Senden Ihrer Nachricht.');
-                window.location.href = 'kontaktformular.html';
-              </script>";
+        echo "error"; // Fehlermeldung zurückgeben
     }
 } else {
     echo "Ungültige Anforderung.";
