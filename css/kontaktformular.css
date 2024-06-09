@@ -1,4 +1,5 @@
-/*ou im allgemein.css (body& main)*/
+/* ou im allgemein.css (body& main) */
+/* ALLGEMEINS */
 body{
     background-color: #A97F67;
     margin: 0;
@@ -43,6 +44,17 @@ h2 {
     color: rgb(204, 153, 153);
 }
 
+p{
+    grid-column: 3 / span 10;
+    grid-row: 3 / span 3;
+    text-align: center;
+    font-size: 20px;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* ALLGEMEINS ENDE */
+
 /* BLAUER BANNER */
 #bannerFarbe {
     background-color: #568098;
@@ -60,16 +72,9 @@ h2 {
     grid-row: 20 / span 1;
     align-self: center;
 }
+/* BLAUER BANNER ENDE */
 
-p{
-    grid-column: 3 / span 10;
-    grid-row: 3 / span 3;
-    text-align: center;
-    font-size: 20px;
-    font-family: "pill-gothic-600mg", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+
 
 #text{
     grid-column: 3 / span 10;
@@ -81,15 +86,11 @@ p{
     font-style: normal;
 }
 
-#Chef{
-    font-family: 'Times New Roman', Times, serif;
-    color: red;
 
-}
 
 /* *** */
 
-/*KONTAKTFORMULAR*/
+/* KONTAKTFORMULAR */
 .formular {
     grid-area: 25 / 4 / span 10 / span 9;
 }
@@ -188,13 +189,26 @@ select {
 }
 
 .success-message {
+    display: none; /* Standardmäßig ausgeblendet */
+    color: green;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/*.success-message {
     background-color: #4CAF50;
     color: white;
     margin-top: 2.5%;
     padding: 12px 20px;
     border-radius: 20px;
     display: none;
-}
+}*/
 
 /*.contact-reason label { -> ke ahnig für was das steit
     font-weight: bold;
@@ -204,60 +218,53 @@ select {
 
 /* Kontaktgrund */
 .icon-grid {
-    display: flex; /* Grid-Layout verwenden */
-    justify-content: space-around; /* Zentriert die Grid-Elemente */
-    gap: 10px; /* Abstand zwischen den Grid-Elementen */
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
 }
 
-.icon-option {
-    text-align: center; /* Zentriert den Inhalt innerhalb des Grid-Elements */
+.icon-container {
+    text-align: center;
+    position: relative; /* Für die absolute Positionierung der Hover-Icons */
 }
 
-.icon-option input {
+.icon-container input {
     display: none; /* Versteckt das eigentliche Radio-Input */
 }
 
-.icon-option label {
-    cursor: pointer; /* Ändert den Mauszeiger bei Hover*/
+.icon-container label {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid transparent; /* Standard: keine sichtbare Umrandung */
-    padding: 10px;
-    border-radius: 5px;
-    transition: border-color 0.3s; /* Übergang für die Randfarbe */
 }
 
-.icon-option label:hover,
-.icon-option input:checked + label {
-    border-color: #007BFF; /* Blaue Umrandung bei Hover oder wenn ausgewählt */
-}
-
-.icon-option img {
-    max-width: 50px; /* Maximale Breite der Icons */
-    margin-bottom: 5px; /* Abstand unterhalb des Icons */
-}
-
-/*weras züg kopiert*/
-/*.einkaufstascheIcon {
-    height: 5vh;
-    max-width: 5vh; /* Einheitliche Breite für alle Icons
-    margin: 0 5px; /* Abstand zwischen den Icons
+.icon-container img {
+    max-width: 100px;
+    margin-bottom: 5px;
     transition: opacity 0.3s ease;
-}*/
+}
 
-/*.einkaufstascheIcon.hover {
+.KontaktIcon.hover {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
-}*/
+}
 
-/*.socialLink:hover .socialMediaIcon {
+.icon-container label:hover .KontaktIcon {
     opacity: 0;
-}*/
+}
 
-/*.socialLink:hover .socialMediaIcon.hover {
+.icon-container label:hover .KontaktIcon.hover {
     opacity: 1;
-}*/
+}
 
+.icon-container input:checked + label .KontaktIcon {
+    opacity: 0;
+}
+
+.icon-container input:checked + label .KontaktIcon.hover {
+    opacity: 1;
+}
+/* KONTAKTFORMULAR ENDE */

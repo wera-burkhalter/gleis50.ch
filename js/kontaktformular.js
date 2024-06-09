@@ -22,33 +22,35 @@
 }); */
 
 document.addEventListener("DOMContentLoaded", function() {
-    const iconOptions = document.querySelectorAll(".icon-option input");
+    const form = document.querySelector(".form");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Verhindert das Standard-Absenden des Formulars
 
-    iconOptions.forEach(option => {
-        option.addEventListener("change", function() {
-            // Alle Bilder zurücksetzen
-            iconOptions.forEach(opt => {
-                const img = opt.nextElementSibling.querySelector("img");
-                img.src = img.getAttribute("src");
-            });
-
-            // Ausgewähltes Bild ändern
-            const selectedImg = this.nextElementSibling.querySelector("img");
-            selectedImg.src = selectedImg.getAttribute("data-selected");
-        });
-
-        // Hover-Effekte hinzufügen
-        const label = option.nextElementSibling;
-        const img = label.querySelector("img");
-        label.addEventListener("mouseover", function() {
-            img.src = img.getAttribute("data-hover");
-        });
-        label.addEventListener("mouseout", function() {
-            if (!option.checked) {
-                img.src = img.getAttribute("src");
+        const formData = new FormData(form);
+        fetch("send_email.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.text())
+        .then(result => {
+            if (result.trim() === "success") {
+                const successMessage = document.getElementById("successMessage");
+                successMessage.style.display = "block";
+                successMessage.innerText = "Vielen Dank! Dein Formular wurde erfolgreich abgesendet.";
+                form.reset(); // Formular zurücksetzen
             } else {
-                img.src = img.getAttribute("data-selected");
+                const errorMessage = document.createElement("div");
+                errorMessage.className = "error-message";
+                errorMessage.innerText = "Entschuldigung, es gab ein Problem beim Senden Ihrer Nachricht.";
+                form.appendChild(errorMessage);
             }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            const errorMessage = document.createElement("div");
+            errorMessage.className = "error-message";
+            errorMessage.innerText = "Entschuldigung, es gab ein Problem beim Senden Ihrer Nachricht.";
+            form.appendChild(errorMessage);
         });
     });
 });
