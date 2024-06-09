@@ -1,4 +1,5 @@
-/*ou im allgemein.css (body& main)*/
+/* ou im allgemein.css (body& main) */
+/* ALLGEMEINS */
 body{
     background-color: #A97F67;
     margin: 0;
@@ -43,6 +44,17 @@ h2 {
     color: rgb(204, 153, 153);
 }
 
+p{
+    grid-column: 3 / span 10;
+    grid-row: 3 / span 3;
+    text-align: center;
+    font-size: 20px;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* ALLGEMEINS ENDE */
+
 /* BLAUER BANNER */
 #bannerFarbe {
     background-color: #568098;
@@ -60,16 +72,9 @@ h2 {
     grid-row: 20 / span 1;
     align-self: center;
 }
+/* BLAUER BANNER ENDE */
 
-p{
-    grid-column: 3 / span 10;
-    grid-row: 3 / span 3;
-    text-align: center;
-    font-size: 20px;
-    font-family: "pill-gothic-600mg", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+
 
 #text{
     grid-column: 3 / span 10;
@@ -81,15 +86,11 @@ p{
     font-style: normal;
 }
 
-#Chef{
-    font-family: 'Times New Roman', Times, serif;
-    color: red;
 
-}
 
 /* *** */
 
-/*KONTAKTFORMULAR*/
+/* KONTAKTFORMULAR */
 .formular {
     grid-area: 25 / 4 / span 10 / span 9;
 }
@@ -266,3 +267,4 @@ select {
 .icon-container input:checked + label .KontaktIcon.hover {
     opacity: 1;
 }
+/* KONTAKTFORMULAR ENDE */
