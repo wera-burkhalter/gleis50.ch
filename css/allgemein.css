@@ -51,11 +51,12 @@ header {
     color: #568098; /* Change the color on hover */
 }
 
-#Logo {
+#headerLogo {
     margin-top: 1%;
     height: 8vw; /* Passen Sie die Größe nach Bedarf an */
     margin: 0 20px; /* Adjust the margin to control space around the logo */
 }
+
 
 
 

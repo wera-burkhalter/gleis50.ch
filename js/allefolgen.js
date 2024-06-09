@@ -36,3 +36,4 @@ document.getElementById('nextButtonZwei').addEventListener('click', function() {
         frame2.style.display = "block";
     }
 });
+
