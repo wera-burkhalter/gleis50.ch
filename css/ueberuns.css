@@ -113,58 +113,86 @@ ul{
     grid-column: 1 / span 20;
     grid-row: 23 / span 11;
     background-color: #568098;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.textGschicht {
+    width: 75%; 
+    font-size: 1.8vw;
+}
+
+
+/*#üsiGschicht { -> SO ISCHS VORHÄR GSI
+    grid-column: 1 / span 20;
+    grid-row: 23 / span 11;
+    background-color: #568098;
 }
 
 #textGschicht {
     grid-column: 3 / span 10;
     grid-row: 34 / span 11;
     font-size: 1.8vw;
-}
+}*/
 
 /* Ds si mir */
-#dsSiMir {
-    grid-column: 3 / span 10;
-    grid-row: 34 / span 11;
+#dsSiMir{
+    grid-column: 1 / span 20;
+    grid-row: 35 / span 11;
 }
 
-#weraBild{
+.teamMitglied {
+    grid-column: 1 / span 20;
+    grid-row: 40 / span 11;
+    padding: 20px;
+}
+
+.teamFoto {
+    width: 395px;
+    height: 531.5px;
+}
+
+.team-member h4 {
     margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 30%;
-}
-#weraText {
-    grid-column: 3 / span 10;
-    grid-row: 34 / span 11;
+    margin-bottom: 10px;
 }
 
-#Nicole{
-    grid-column: 8 / span 10;
-    grid-row: 34 / span 11;
-
-}
-#nicoleBild{
-    margin: 0;
+.team-member ul {
+    list-style-type: none;
     padding: 0;
-    height: 100%;
-    width: 30%;
 }
-#nicoleText {
-    grid-column: 8 / span 10;
-    grid-row: 34 / span 11;
+
+.team-member ul li {
+    margin-bottom: 5px;
 }
 
 
 /* Üses Projekt */
 #üsesProjekt {
+    grid-column: 1 / span 20;
+    grid-row: 65 / span 11;
+    background-color: #568098;
+    display: flex; /* Fügt Flexbox hinzu, um den inneren Inhalt zu positionieren */
+    justify-content: center; /* Zentriert den inneren Inhalt horizontal */
+    align-items: center; /* Zentriert den inneren Inhalt vertikal */
+}
+
+.textProjekt {
+    width: 75%; /* Stellt sicher, dass der Text nur die Hälfte des Containers einnimmt */
+    font-size: 1.8vw;
+}
+
+
+/*#üsesProjekt { -> SO ISCHS VORHÄR GSI
     grid-column:  1 / span 20;
-    grid-row: 70 / span 11;
+    grid-row: 65 / span 11;
     background-color: #568098;
 }
 
-#textProjekt {
+.textProjekt {
     grid-column: 3 / span 10;
-    grid-row: 44 / span 11;
+    grid-row: 76 / span 11;
     font-size: 1.8vw;
 }*/
 
@@ -174,7 +202,7 @@ ul{
 /* FOOTER */
 #fahrenderZug {
     grid-column: 1 / span 14;
-    grid-row: 65 / span 5;
+    grid-row: 80 / span 5;
     position: relative;
     overflow: hidden;
 }
