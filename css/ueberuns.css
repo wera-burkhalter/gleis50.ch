@@ -45,15 +45,14 @@ h2 {
 }
 
 p{
-    grid-column: 3 / span 10;
+    /*grid-column: 3 / span 10;
     grid-row: 2 / span 3;
-    text-align: center;
+    text-align: center;*/
     font-size: 30px;
     font-family: "pill-gothic-600mg", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    /*font-weight: 400;
+    font-style: normal;*/
     color: rgb(204, 153, 153);
-
 }
 
 h3 {
@@ -64,9 +63,16 @@ h3 {
 
 }
 h4 {
-    font-family: pill-gothic, sans-serif;
+    font-family: "hoss-round", sans-serif;
     font-size: 1.8vw;
     color: #CC9999;
+}
+
+ul{
+    grid-column: 5;
+    font-size: 30px;
+    font-family: "pill-gothic-600mg", sans-serif;
+    color: rgb(204, 153, 153);
 }
 
 /* ALLGEMEIN ENDE */
@@ -102,28 +108,66 @@ h4 {
 /* BLAUER BANNER ENDE */
 
 /* BOXEN THEMEN */
-
-
+/* Üsi Gschicht */
 #üsiGschicht {
-    grid-column: 3 / span 10;
+    grid-column: 1 / span 20;
     grid-row: 23 / span 11;
     background-color: #568098;
+}
+
+#textGschicht {
+    grid-column: 3 / span 10;
+    grid-row: 34 / span 11;
     font-size: 1.8vw;
 }
 
+/* Ds si mir */
 #dsSiMir {
     grid-column: 3 / span 10;
-    grid-row: 33 / span 11;
-    background-color: #A97F67;
+    grid-row: 34 / span 11;
+}
+
+#weraBild{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 30%;
+}
+#weraText {
+    grid-column: 3 / span 10;
+    grid-row: 34 / span 11;
+}
+
+#Nicole{
+    grid-column: 8 / span 10;
+    grid-row: 34 / span 11;
+
+}
+#nicoleBild{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 30%;
+}
+#nicoleText {
+    grid-column: 8 / span 10;
+    grid-row: 34 / span 11;
 }
 
 
+/* Üses Projekt */
 #üsesProjekt {
+    grid-column:  1 / span 20;
+    grid-row: 70 / span 11;
+    background-color: #568098;
+}
+
+#textProjekt {
     grid-column: 3 / span 10;
     grid-row: 44 / span 11;
-    background-color: #568098;
     font-size: 1.8vw;
-}
+}*/
+
 /* BOXEN THEMEN ENDE */
 
 
