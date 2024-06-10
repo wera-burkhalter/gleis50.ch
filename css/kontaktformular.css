@@ -92,7 +92,8 @@ p{
 
 /* KONTAKTFORMULAR */
 .formular {
-    grid-area: 25 / 4 / span 10 / span 9;
+    grid-area: 27 / 4 / span 10 / span 9;
+    align-self: center;
 }
 
 form{
