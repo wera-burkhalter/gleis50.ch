@@ -43,7 +43,7 @@
     </marquee>
 
         <h2 class="tituKontakt">Kontaktformular</h2>
-        <p class="textKontakt">Du wottsch mit üs Kontakt ufnäh? Ds geit ganz easy mit üsem Kontaktformular. <br> Gib eifach di Name u dini E-Mail Adrässe ah, so chöi mir dir näre o antworte. Aus Kontaktgrund chasch us füf verschidene uswähle. Wenn du uf "Stickers" klicksch, hesch dMüglechkeit gäge bezahlig bi üs Stickers zbsteue, meh Infos bechunnsch näre ih üsere Antowort. <br> SFormular funktioniert mau usnahmswiis nid? De chasch üs o eifach es Mail ah gleis50.ch@gmail.com schicke. <br> Mir fröie üs uf dini Kontaktufnahm!</p>
+        <p class="textKontakt">Du wottsch mit üs Kontakt ufnäh? Ds geit ganz easy mit üsem Kontaktformular. <br> Gib eifach di Name u dini E-Mail Adrässe ah, so chöi mir dir näre o antworte. Aus Kontaktgrund chasch us füf verschidene uswähle. Wenn du uf "Stickers" klicksch, hesch dMüglechkeit gäge bezahlig bi üs Stickers zbsteue, meh Infos bechunnsch näre ih üsere Antowort. <br> <br> S'Formular funktioniert mau usnahmswiis nid? De chasch üs o eifach es Mail ah <a href="mailto:gleis50.ch@gmail.com" id="mailText">gleis50.ch@gmail.com</a> schicke. <br> Mir fröie üs uf dini Kontaktufnahm!</p>
         <!-- Kontaktformular -->
         <div class="Kontaktformular">
             <form id="contactForm" action="sendEmail.php" method="post">
@@ -55,15 +55,54 @@
               <label for="email">Dini E-Mail-Adrässe:</label>
               <input type="email" id="email" name="email" required>
 
-              <!-- Auswahl Kontaktgrund -->
-               <label for="reason">Di Kontaktgrund:</label>
-               <select id="reason" name="reason" required>
-                    <option value="Frage">Frage</option>
-                    <option value="Idee">Idee</option>
-                    <option value="Nachricht">Nachricht</option>
-                    <option value="Feedback">Feedback</option>
-                    <option value="Shop">Sticker</option>
-               </select>
+              <!-- Kontaktgrund Abschnitt -->
+        <div class="contact-reason">
+            <label id="formularGrund" for="grund">Kontaktgrund:</label>
+            <div class="icon-grid">
+                <!-- Icon-Optionen -->
+                <div class="icon-container">
+                    <input type="radio" id="frage" name="kontaktgrund" value="frage">
+                    <label for="frage">
+                        <img src="bilder/Icons_Kontakt/Fragezeichen.png" class="KontaktIcon" alt="Fragezeichen Icon">
+                        <img src="bilder/Icons_Kontakt/Feedback_hover.png" class="KontaktIcon hover" alt="Frageichen Hover Icon">
+                        <span>Frag</span>
+                    </label>
+                </div>
+                <div class="icon-container">
+                    <input type="radio" id="idee" name="kontaktgrund" value="feedback">
+                    <label for="idee">
+                        <img src="bilder/Icons_Kontakt/Idee.png" class="KontaktIcon" alt="Idee Icon">
+                        <img src="bilder/Icons_Kontakt/Idee_hover.png" class="KontaktIcon hover" alt="Idee Hover Icon">
+                        <span>Idee</span>
+                    </label>
+                </div>
+                <div class="icon-container">
+                    <input type="radio" id="feedback" name="kontaktgrund" value="problem">
+                    <label for="feedback">
+                        <img src="bilder/Icons_Kontakt/Feedback.png" class="KontaktIcon" alt="Feedback Icon">
+                        <img src="bilder/Icons_Kontakt/Feedback_hover.png" class="KontaktIcon hover" alt="Feedback Hover Icon">
+                        <span>Feedback</span>
+                    </label>
+                </div>
+                <div class="icon-container">
+                    <input type="radio" id="nachricht" name="kontaktgrund" value="problem">
+                    <label for="nachricht">
+                        <img src="bilder/Icons_Kontakt/Nachricht.png" class="KontaktIcon" alt="Nachricht Icon">
+                        <img src="bilder/Icons_Kontakt/Nachricht_hover.png" class="KontaktIcon hover" alt="Nachricht Hover Icon">
+                        <span>Nachricht</span>
+                    </label>
+                </div>
+                <div class="icon-container">
+                    <input type="radio" id="shop" name="kontaktgrund" value="problem">
+                    <label for="shop">
+                        <img src="bilder/Icons_Kontakt/Shop.png" class="KontaktIcon" alt="Shop Icon">
+                        <img src="bilder/Icons_Kontakt/Shop_hover.png" class="KontaktIcon hover" alt="Shop Hover Icon">
+                        <span>Shop</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
 
                <!-- Textfeld für Nachricht -->
                 <label for="message">Dini Nachricht ah üs:</label>
