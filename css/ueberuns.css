@@ -1,18 +1,6 @@
 /*ou im allgemein.css (body& main)*/
 /* ALLGEMEIN */
-body{
-    background-color: #A97F67;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden; /* Verhindert horizontales Scrollen */
-}
 
-main{
-    display: grid;
-    grid-template-columns: 40px repeat(12, 1fr) 40px;
-    grid-auto-rows: 50px;
-}
 
 
 #SchildStartseite {
@@ -323,3 +311,75 @@ footer {
 }
 /* FOOTER ENDE */
 
+
+/* R E S P O N S I V E   S H I T */
+/*HEADER*/
+@media screen and (max-width: 1024px){
+    /*HEADER*/
+    header {
+        height: 8%; /* Reduziere die Höhe des Headers */
+    }
+    .headerLinks {
+        font-size: 2.3vh; /* Verkleinere die Schriftgröße */
+    }
+    #headerLogo {
+        height: 10vw; /* Verkleinere die Höhe des Logos */
+    }
+    #menu {
+        margin-top: 2%; /* Verringere den oberen Rand des Menüs */
+    }
+    #left-menu, #right-menu {
+        gap: 50px; /* Verringere den Abstand zwischen den Links */
+        margin: 0 10px; /* Verringere die äußeren Abstände */
+    }
+
+    /* Diverses */
+    main{
+        grid-template-columns: 20px repeat(12, 1fr) 20px;
+        overflow: hidden;
+    }
+
+    h2 {
+        grid-row: 6 /span 1;
+        font-size: 10vw;
+    }
+
+    /* Schild Startseite */
+    #SchildStartseite {
+        max-width: 100%;
+        max-height: 80%;
+        grid-column: 2 / span 12;
+        grid-row: 4 / span 14;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 8vw;
+        grid-column: 2 / span 12;
+        grid-row: 7 /span 2;
+        text-align: center;
+    }
+
+    /* Banner */
+    #bannerFarbe {
+        grid-row: 18 / span 1;
+    }
+
+    #bannerText {
+        grid-row: 18 / span 1;
+    }
+
+    
+
+    /* Footer */
+    .socialMediaIcon {
+        height: 3vh;
+        max-width: 3vh;
+    }
+    .footerText {
+        font-size: 1.5vh;
+    }
+    #mail {
+        font-size: 1.5vh;
+    }
+}
