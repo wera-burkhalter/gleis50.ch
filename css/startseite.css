@@ -16,7 +16,7 @@ h1 {
     grid-column: 2 / span 12;
     grid-row: 3 /span 3;
     text-align: center; 
-    font-size: 100px;
+    font-size: 7vw;
     font-family: "hoss-round", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -27,7 +27,7 @@ h2 {
     grid-column: 2 / span 12;
     grid-row: 7 /span 1;
     text-align: center; 
-    font-size: 128px;
+    font-size: 10vw;
     font-family: "hoss-round", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -154,7 +154,6 @@ h2 {
     height: 100%;
     grid-column: 2 / span 12;
     grid-row: 35 / span 8;
-
 }
 
 
@@ -253,9 +252,6 @@ h2 {
     background-color: #568098;
 }
 
-
-
-
 #fahrenderZug {
     grid-row: 75 / span 5;
 }
@@ -281,3 +277,413 @@ h2 {
 }
 
 
+
+
+@media screen and (max-width: 1024px) {
+    #SchildStartseite {
+        max-width: 100%;
+        max-height: 80%;
+        grid-row: 2 / span 14;
+
+    }
+    h1 {
+        font-size: 7vw;
+        grid-row: 3 /span 2;
+    }
+    h2 {
+        grid-row: 6 /span 1;
+        font-size: 10vw;
+    }
+
+    /*HEADER*/
+    .headerLinks {
+        font-size: 1.5vh;
+    }
+    #headerLogo {
+        height: 10vw;
+    }
+
+    /*FOOTER*/
+    .socialMediaIcon {
+        height: 3vh;
+        max-width: 3vh;
+    }
+    .footerText {
+        font-size: 1.5vh;
+    }
+    #mail {
+        font-size: 1.5vh;
+    }
+
+    /*BANNER*/
+    #bannerFarbe {
+        grid-row: 17 / span 1;
+    }
+    #bannerText {
+        grid-row: 17 / span 1;
+        font-size: 2.5vh;
+    }
+
+    /*FACTS*/
+    .schilderFacts {
+        grid-row: 22 / span 9;
+    }
+    #geschichte {
+        grid-row: 22 / span 9;
+    }
+    #zuUns {
+        grid-row: 22 / span 9;
+    }
+    #uhr {
+        grid-row: 22 / span 9;
+    }
+    #tickets {
+        grid-row: 22 / span 9;
+    }
+    #ziel {
+        grid-row: 22 / span 9;
+    }
+    #standort {
+        grid-row: 22 / span 9;
+    }
+    #zuUnsText {
+        grid-row: 23 / span 1;
+        margin-top: 15%;
+        font-size: 1.5vw;
+    }    
+    #geschichteText {
+        grid-row: 23 / span 1;
+        margin-top: 20%;
+        font-size: 1.5vw;
+    }
+    #zielText {
+        grid-row: 23 / span 1;
+        margin-top: 20%;
+        font-size: 1.5vw;
+    }
+    .buttonMehr {
+        font-size: 1.5vh;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    #projekt, #uns, #vision {
+        grid-row: 25  / span 1;
+        margin-top: 8vh;
+    }
+
+    #spotify {
+        grid-row: 34 / span 8;
+        max-height: 300px;
+    }
+
+    .bt_carousel {
+        grid-row: 42 / span 5;
+        max-height: 100%;
+    }
+    .bt_carousel-item h3 {
+        font-size: 2.5vw;
+        top: 15%;
+        left: 20%;
+    }
+    .bt_carousel-item .langeTexte {
+        font-size: 2.5vw;
+        top: 14%;
+        left: 20%;
+    }
+    #blaueBox {
+        grid-row: 50 / span 10;
+    }
+    .lightwidget-widget {
+        grid-row: 50 / span 1;
+        margin-top: 1.5%;
+    }
+    #fahrenderZug {
+        grid-row: 63 / span 4;
+    }
+}
+
+@media (max-width: 545px) {
+    #Logo {
+        height: 90%;
+        grid-column: 6 / span 3;
+        grid-row: 1 / span 3;
+        align-content: center;
+        margin-top: 4%;
+    }
+
+    #SchildStartseite {
+        max-width: 100%;
+        max-height: 50%;
+        grid-row: 1 / span 14;
+        margin-top: 20%;
+    }
+
+    h1 {
+        font-size: 7vw;
+        grid-row: 3 /span 2;
+        margin-top: 8%;
+    }
+    h2 {
+        grid-row: 4 /span 1;
+        font-size: 12vw;
+        margin-top: 17%;
+    }
+    
+    #bannerFarbe {
+        grid-row: 13 / span 1;
+    }
+    #bannerText {
+        grid-row: 13 / span 1;
+        font-size: 3.5vh;
+    }
+
+    /*FACTS*/
+    #geschichte {
+    grid-row: 17 / span 3;
+    }
+    #zuUns {
+    grid-row: 17 / span 3;
+    }
+    #ziel {
+    grid-row: 17 / span 3;
+    }
+    #uhr {
+    grid-row: 17 / span 4;
+    margin-top: 10%;
+    }
+    #tickets {
+    grid-row: 17 / span 4;
+    margin-top: 10%;
+    }
+    #standort {
+        grid-row: 17 / span 4;
+        margin-top: 10%;
+    }
+    #zuUnsText {
+        visibility: hidden;
+    }    
+    #geschichteText {
+        visibility: hidden;
+    }
+    #zielText {
+        visibility: hidden;
+    }
+    .buttonMehr {
+        font-size: 2vh;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    #projekt, #uns, #vision {
+        grid-row: 17 / span 1;
+        margin-top: 9vh;
+    }
+
+    #spotify {
+        grid-row: 23 / span 8;
+    }
+
+    .bt_carousel {
+        grid-row: 31 / span 3;
+        max-height: 100%;
+    }
+    .bt_carousel-item h3 {
+        font-size: 2.5vw;
+        top: 15%;
+        left: 20%;
+    }
+    .bt_carousel-item .langeTexte {
+        font-size: 2.5vw;
+        top: 14%;
+        left: 20%;
+    }
+    #blaueBox {
+        grid-row: 37 / span 5;
+    }
+    .lightwidget-widget {
+        grid-row: 37 / span 1;
+        margin-top: 2%;
+    }
+
+    /*HEADER*/
+    header {
+        height: 5%; /* Reduziere die Höhe des Headers */
+    }
+    .headerLinks {
+         font-size: 2.3vh; /* Verkleinere die Schriftgröße */
+    }
+    #headerLogo {
+        height: 10vw; /* Verkleinere die Höhe des Logos */
+    }
+    #menu {
+        margin-top: 2%; /* Verringere den oberen Rand des Menüs */
+    }
+        #left-menu, #right-menu {
+            gap: 50px; /* Verringere den Abstand zwischen den Links */
+            margin: 0 10px; /* Verringere die äußeren Abstände */
+        }
+        /*FOOTER*/
+        .socialMediaIcon {
+            height: 3vh;
+            max-width: 3vh;
+        }
+        .footerText {
+            font-size: 1.5vh;
+        }
+        #mail {
+            font-size: 1.5vh;
+        }
+
+        #fahrenderZug {
+            grid-row: 45 / span 2;
+        }
+}
+
+@media (min-width: 300px) and (max-width: 430px) {
+    #Logo {
+        height: 60%;
+        grid-column: 5 / span 2;
+    }
+
+    #SchildStartseite {
+        max-width: 100%;
+        max-height: 100%;
+        grid-row: 1 / span 5;
+        grid-column: 2 / span 12;
+        margin-top: 20%;
+    }
+
+    h1 {
+        font-size: 7vw;
+        grid-row: 2 /span 2;
+        margin-top: 18%;
+    }
+    h2 {
+        grid-row: 3 / span 1;
+        font-size: 12vw;
+        margin-top: 20%;
+    }
+
+    #bannerFarbe {
+        grid-row: 9 / span 1;
+    }
+    #bannerText {
+        grid-row: 9 / span 1;
+        font-size: 3vh;
+    }
+
+    /*FACTS*/
+    #geschichte {
+        grid-row: 12 / span 3;
+        }
+        #zuUns {
+        grid-row: 12 / span 3;
+        }
+        #ziel {
+        grid-row: 12 / span 3;
+        }
+        #uhr {
+            visibility: hidden;
+        }
+        #tickets {
+            visibility: hidden;
+        }
+        #standort {
+            visibility: hidden;
+        }
+        #zuUnsText {
+            visibility: hidden;
+        }    
+        #geschichteText {
+            visibility: hidden;
+        }
+        #zielText {
+            visibility: hidden;
+        }
+        .buttonMehr {
+            font-size: 1.5vh;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        #projekt, #uns, #vision {
+            grid-row: 11 / span 1;
+            margin-top: 9vh;
+        }
+    
+        #spotify {
+            grid-row: 17 / span 4;
+        }
+    
+        .bt_carousel {
+            grid-row: 23 / span 3;
+            max-height: 100%;
+        }
+        .bt_carousel-item h3 {
+            font-size: 2.5vw;
+            top: 15%;
+            left: 20%;
+        }
+        .bt_carousel-item .langeTexte {
+            font-size: 2.5vw;
+            top: 14%;
+            left: 20%;
+        }
+        #blaueBox {
+            grid-row: 28 / span 3;
+        }
+        .lightwidget-widget {
+            grid-row: 28 / span 1;
+            margin-top: 2%;
+        }
+
+        #fahrenderZug {
+            grid-row: 33 / span 2;
+            margin-top: 10%;
+        }
+
+        /*FOOTER*/
+        .socialMediaIcon {
+            height: 2vh;
+            max-width: 2vh;
+        }
+        .footerText {
+            font-size: 1vh;
+        }
+         #mail {
+            font-size: 1vh;
+        }
+
+        header {
+            height: 5%; /* Reduziere die Höhe des Headers */
+        }
+    
+        .headerLinks {
+            display: none; /* Hide header links */
+        }
+    
+        #headerLogo {
+            display: none;
+        }
+        .logoHeader {
+            display: block;
+            height: 15vw;
+        }
+
+    
+        #menu {
+            margin-top: 2%; /* Verringere den oberen Rand des Menüs */
+            width: 90%;
+        }
+    
+        #left-menu, #right-menu {
+            display: none; /* Hide left and right menus */
+        }
+    
+        .burger-menu {
+            display: block; /* Show the burger menu icon */
+        }
+    
+        .dropdown-menu {
+            display: flex; /* Show the dropdown menu */
+            flex-direction: column;
+        }
+}

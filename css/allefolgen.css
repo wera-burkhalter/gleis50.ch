@@ -288,3 +288,504 @@ color: #568098;
 
 
 
+@media screen and (max-width: 1024px) {
+    #SchildStartseite {
+        max-width: 100%;
+        max-height: 80%;
+        grid-row: 2 / span 14;
+
+    }
+    h1 {
+        grid-row: 3 /span 3;
+        font-size: 12vw;
+        margin-top: 8vh;
+    }
+
+    p {
+        font-size: 2.3vw;
+    }
+    h4 {
+        font-size: 2.5vw;
+    }
+    /*BANNER*/
+    #bannerFarbe {
+        grid-row: 17 / span 1;
+    }
+    #bannerText {
+        grid-row: 17 / span 1;
+        font-size: 2.5vh;
+    }
+
+    #fahrenderZug {
+        grid-row: 63 / span 4;
+    }
+
+    #boxFolgeSpecial {
+        grid-row: 22 / span 9;
+    }
+    #spotifySpecial {
+        grid-row: 23 / span 8;
+    }
+    #speicalTitel {
+        grid-row: 23 / span 1;
+    }
+    #specialText {
+        font-size: 2.5vw;
+        grid-row: 23 / span 8;
+        margin-top: 15%;
+    }
+
+
+    #spotifyVier1 {
+        grid-row: 32 / span 8;
+    }
+    #spotifyVier2 {
+        grid-row: 32 / span 8;
+    }
+    #nextButtonVier{
+        grid-row: 35 / span 1;
+        margin-left: -30%;
+        font-size: 3em;
+    }
+    #vierTitel {
+        grid-row: 31 / span 1;
+        margin-top: 12%;
+    }
+    #vierUnttitel01 {
+        grid-column: 7 / span 7;
+        grid-row: 32 / span 1;
+        margin-left: 17%;
+        margin-top: 12%;
+    }
+    #vierText01 {
+        grid-row: 33 / span 2;
+        grid-column: 7 / span 7;
+        margin-top: 8%;
+        margin-left: 19%;
+    }
+    #vierUnttitel02 {
+        grid-column: 7 / span 7;
+        grid-row: 35 / span 2;
+        margin-top: 13%;
+        margin-left: 17%;
+    }
+    #vierText02 {
+        grid-row: 35 / span 2;
+        grid-column: 7 / span 7;
+        margin-top: 18%;
+        margin-left: 19%;
+    }
+
+
+
+    #boxFolgeDrei {
+        grid-row: 40 / span 9;
+    }
+    #spotifyDrei1 {
+        grid-row: 41 / span 8;
+    }
+    #spotifyDrei2 {
+        grid-row: 41 / span 8;
+    }
+    #nextButtonDrei{
+        grid-row: 44 / span 1;
+        margin-left: -30%;
+        font-size: 3em;
+    }
+    #dreiTitel {
+        grid-row: 41/ span 1;
+        margin-left: 12%;
+    }
+    #dreiUnttitel01 {
+        grid-column: 7 / span 7;
+        grid-row: 41 / span 1;
+        margin-top: 10%;
+        margin-left: 17%;
+    }
+    #dreiText01 {
+        grid-column: 7 / span 7;
+        grid-row: 42 / span 2;
+        margin-top: 6%;
+        margin-left: 19%;
+    }
+    #dreiUnttitel02 {
+        grid-column: 7 / span 7;
+        grid-row: 44 / span 1;
+        margin-left: 17%;
+    }
+    #dreiText02 {
+        grid-column: 7 / span 7;
+        grid-row: 44 / span 2;
+        margin-left: 19%;
+        margin-top: 13%;
+    }
+
+
+    #spotifyZwei1 {
+        grid-row: 50 / span 8;
+    }
+    #spotifyZwei2 {
+        grid-row: 50 / span 8;
+    }
+    #nextButtonZwei{
+        grid-row: 53 / span 1;
+        margin-left: -30%;
+        font-size: 3em;
+    }
+    #zweiTitel {
+        grid-row: 50 / span 1;
+        margin-top: 0;
+        margin-left: 12%;
+    }
+    #zweiUnttitel01 {
+        grid-column: 7 / span 7;
+        grid-row: 50 / span 1;
+        margin-top: 10%;
+        margin-left: 17%;
+    }
+    #zweiText01 {
+        grid-column: 7 / span 7;
+        grid-row: 51 / span 2;
+        margin-top: 6%;
+        margin-left: 19%;
+    }
+    #zweiUnttitel02 {
+        grid-column: 7 / span 7;
+        grid-row: 54 / span 1;
+        margin-top: 10%;
+        margin-left: 17%;
+    }
+    #zweiText02 {
+        grid-column: 7 / span 7;
+        grid-row: 55 / span 2;
+        margin-left: 19%;
+        margin-top: 6%;
+    }
+
+    #boxFolgeEins {
+        grid-row: 58 / span 9;
+    }
+    #spotifyEins {
+        grid-row: 59 / span 8;
+    }
+    #einsTitel {
+        grid-row: 59 / span 1;
+        margin-left: 12%;
+    }
+    #einsText {
+        font-size: 1.8vw;
+        grid-column: 7 / span 7;
+        grid-row: 59 / span 8;
+        margin-left: 19%;
+        font-size: 2.5vw;
+    }
+
+    /*HEADER*/
+    header {
+        height: 8%; /* Reduziere die Höhe des Headers */
+    }
+    .headerLinks {
+        font-size: 2.3vh; /* Verkleinere die Schriftgröße */
+    }
+    #headerLogo {
+        height: 10vw; /* Verkleinere die Höhe des Logos */
+    }
+    #menu {
+        margin-top: 2%; /* Verringere den oberen Rand des Menüs */
+    }
+    #left-menu, #right-menu {
+        gap: 50px; /* Verringere den Abstand zwischen den Links */
+        margin: 0 10px; /* Verringere die äußeren Abstände */
+    }
+    /*FOOTER*/
+    .socialMediaIcon {
+        height: 3vh;
+        max-width: 3vh;
+    }
+    .footerText {
+        font-size: 1.5vh;
+    }
+    #mail {
+        font-size: 1.5vh;
+    }
+
+    #fahrenderZug {
+        grid-row: 70 / span 4;
+    }
+}
+
+@media (max-width: 545px) {
+    #SchildStartseite {
+        max-width: 100%;
+        max-height: 50%;
+        grid-row: 1 / span 14;
+        margin-top: 25%;
+    }
+    h1 {
+        grid-row: 3 /span 3;
+        font-size: 12vw;
+        margin-top: 12vh;
+    }
+
+    p {
+        font-size: 2.3vw;
+    }
+    h4 {
+        font-size: 2.5vw;
+    }
+    /*BANNER*/
+    #bannerFarbe {
+        grid-row: 13 / span 1;
+    }
+    #bannerText {
+        grid-row: 13 / span 1;
+        font-size: 3.5vh;
+    }
+
+    #boxFolgeSpecial {
+        grid-row: 18 / span 9;
+    }
+    #spotifySpecial {
+        grid-column: 2 / span 12;
+        grid-row: 19 / span 4;
+        width: 100%;
+    }
+    #speicalTitel {
+        grid-row: 24 / span 1;
+        grid-column: 2 / span 12;
+        font-size: 4vh;
+        margin-left: 0;
+    }
+    #specialText {
+        font-size: 3vw;
+        grid-row: 24 / span 8;
+        grid-column: 2 / span 12;
+        margin-top: 10%;
+        margin-left: 4%;
+    }
+
+
+    #spotifyVier1 {
+        grid-row: 28 / span 4;
+        grid-column: 2 / span 9;
+        width: 90%;
+    }
+    #spotifyVier2 {
+        grid-row: 28 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
+    }
+    #nextButtonVier{
+        grid-row: 30 / span 1;
+        grid-column: 13 / span 2;
+        margin-left: -30%;
+        font-size: 3em;
+    }
+    #vierTitel {
+        grid-row: 32 / span 1;
+        grid-column: 2 / span 12;
+        font-size: 4vh;
+        margin-left: 0;
+    }
+    #vierUnttitel01 {
+        font-size: 3vw;
+        grid-column: 2 / span 12;
+        grid-row: 33 / span 1;
+        margin-top: 8%;
+        margin-left: 4%;
+    }
+    #vierText01 {
+        font-size: 3vw;
+        grid-row: 33 / span 2;
+        grid-column: 2 / span 11;
+        margin-top: 13%;
+        margin-left: 4%;
+    }
+    #vierUnttitel02 {
+        font-size: 3vw;
+        grid-column: 2 / span 12;
+        grid-row: 34 / span 1;
+        margin-top: 17%;
+        margin-left: 4%;
+    }
+    #vierText02 {
+        font-size: 3vw;
+        grid-row: 35 / span 2;
+        grid-column: 2 / span 11;
+        margin-top: 11%;
+        margin-left: 4%;
+    }
+
+
+
+    #boxFolgeDrei {
+        grid-row: 37 / span 11;
+        margin-top: 6%;
+    }
+    #spotifyDrei1 {
+        grid-row: 38 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
+        margin-top: 6%;
+    }
+    #spotifyDrei2 {
+        grid-row: 38 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
+        margin-top: 6%;
+    }
+    #nextButtonDrei{
+        grid-column: 13 / span 2;
+        grid-row: 41 / span 1;
+        margin-left: -30%;
+        font-size: 3em;
+        margin-top: -8%;
+    }
+    #dreiTitel {
+        grid-column: 2 / span 12;
+        grid-row: 43/ span 1;
+        font-size: 4vh;
+        margin-left: 0;
+        margin-top: 6%;
+    }
+    #dreiUnttitel01 {
+        grid-column: 2 / span 12;
+        grid-row: 43 / span 1;
+        font-size: 3vw;
+        margin-left: 4%;
+        margin-top: 13%;
+    }
+    #dreiText01 {
+        grid-column: 2 / span 11;
+        grid-row: 44 / span 2;
+        margin-top: 7%;
+        margin-left: 4%;
+        font-size: 3vw;
+    }
+    #dreiUnttitel02 {
+        grid-column: 2 / span 12;
+        grid-row: 44 / span 1;
+        margin-left: 4%;
+        margin-top: 16%;
+        font-size: 3vw;
+    }
+    #dreiText02 {
+        grid-column: 2 / span 11;
+        grid-row: 45 / span 2;
+        margin-top: 10%;
+        margin-left: 4%;
+        font-size: 3vw;
+    }
+
+
+    #spotifyZwei1 {
+        grid-row: 48 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
+        margin-top: 10%;
+    }
+    #spotifyZwei2 {
+        grid-row: 48 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
+        margin-top: 10%;
+    }
+    #nextButtonZwei{
+        grid-column: 13 / span 2;
+        grid-row: 51 / span 1;
+        margin-top: 10%;
+        margin-left: -30%;
+        font-size: 3em;
+    }
+    #zweiTitel {
+        grid-column: 2 / span 12;
+        grid-row: 54 / span 1;
+        font-size: 4vh;
+        margin-left: 0;
+        margin-top: -2%;
+    }
+    #zweiUnttitel01 {
+        grid-column: 2 / span 12;
+        grid-row: 53 / span 1;
+        font-size: 3vw;
+        margin-left: 4%;
+        margin-top: 16%;
+    }
+    #zweiText01 {
+        grid-column: 2 / span 11;
+        grid-row: 54 / span 1;
+        margin-top: 10%;
+        margin-left: 4%;
+        font-size: 3vw;
+    }
+    #zweiUnttitel02 {
+        grid-column: 2 / span 12;
+        grid-row: 55 / span 1;
+        font-size: 3vw;
+        margin-left: 4%;
+    }
+    #zweiText02 {
+        grid-column: 7 / span 7;
+        grid-row: 55 / span 2;
+        margin-left: 19%;
+        margin-top: 6%;
+    }
+
+    #boxFolgeEins {
+        grid-row: 58 / span 9;
+    }
+    #spotifyEins {
+        grid-row: 58 / span 4;
+        grid-column: 2 / span 14;
+        width: 90%;
+        margin-top: 10%;
+    }
+    #einsTitel {
+        grid-column: 2 / span 12;
+        grid-row: 64 / span 1;
+        font-size: 4vh;
+        margin-left: 0;
+    }
+    #einsText {
+        font-size: 1.8vw;
+        grid-column: 2 / span 11;
+        grid-row: 64 / span 8;
+        margin-top: 10%;
+        margin-left: 4%;
+        font-size: 3vw;
+    }
+
+    /*HEADER*/
+    header {
+        height: 8%; /* Reduziere die Höhe des Headers */
+    }
+    .headerLinks {
+        font-size: 2.3vh; /* Verkleinere die Schriftgröße */
+    }
+    #headerLogo {
+        height: 10vw; /* Verkleinere die Höhe des Logos */
+        margin-top: 1%;;
+    }
+    #menu {
+        margin-top: 2%; /* Verringere den oberen Rand des Menüs */
+    }
+    #left-menu, #right-menu {
+        gap: 50px; /* Verringere den Abstand zwischen den Links */
+        margin: 0 10px; /* Verringere die äußeren Abstände */
+    }
+    /*FOOTER*/
+    .socialMediaIcon {
+        height: 3vh;
+        max-width: 3vh;
+    }
+    .footerText {
+        font-size: 1.5vh;
+    }
+    #mail {
+        font-size: 1.5vh;
+    }
+
+    #fahrenderZug {
+        grid-row: 70 / span 2;
+    }
+}
