@@ -1,62 +1,36 @@
-/* document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Verhindert das Absenden des Formulars
+// Einfache Validierung beim Absenden des Formulars
+//document.getElementById('contactForm').addEventListener('submit', function(event) {
+    // Überprüfen, ob das Formular validiert ist//
+    //if (!event.target.checkValidity()) {
+        //event.preventDefault();
+        //alert('Bitte füllen Sie alle Felder korrekt aus.');
+    //}
+//});
 
-    // Formulardaten erfassen
-    const name = document.getElementById('name').value;
-    const selectedOption = document.querySelector('input[name="option"]:checked')?.value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Verhindert das Standardverhalten des Formulars
 
-    // Überprüfung der Formulardaten
-    if (!name || !selectedOption || !email || !message) {
-        alert('Bitte füllen Sie alle Felder aus.');
+    // Überprüfen, ob das Formular validiert ist
+    if (!event.target.checkValidity()) {
+        alert('Bitte füllen Sie alle Felder korrekt aus.');
         return;
     }
 
-    // Hier können Sie die Daten an Ihren Server senden
-    console.log('Formulardaten:', { name, selectedOption, email, message });
-    alert('Formular erfolgreich gesendet!');
-
-    // Formular zurücksetzen
-    document.getElementById('contactForm').reset();
-}); */
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector(".form");
-    form.addEventListener("submit", handleFormSubmit);
-});
-
-function handleFormSubmit(event) {
-    event.preventDefault(); // Verhindert das Standard-Absenden des Formulars
-
-    const form = event.target; // Formular aus dem Event-Target holen
-    const formData = new FormData(form);
-    fetch("sendEmail.php", {
-        method: "post",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(result => {
-        if (result.trim() === "success") {
-            const successMessage = document.getElementById("successMessage");
-            successMessage.style.display = "block";
-            successMessage.innerText = "Vielen Dank! Dein Formular wurde erfolgreich abgesendet.";
-            form.reset(); // Formular zurücksetzen
-        } else {
-            displayErrorMessage(form, "Entschuldigung, es gab ein Problem beim Senden Ihrer Nachricht.");
+    const formData = new FormData(this);
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'sendEmail.php'); 
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            const responseMessage = document.getElementById('responseMessage');
+            if (xhr.status === 200) {
+                responseMessage.textContent = 'Vielen Dank für Ihre Nachricht!';
+                responseMessage.style.display = 'block';
+                document.getElementById('contactForm').reset();
+            } else {
+                responseMessage.textContent = 'Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut.';
+                responseMessage.style.display = 'block';
+            }
         }
-    })
-    .catch(error => {
-        console.error("Error:", error);
-        displayErrorMessage(form, "Entschuldigung, es gab ein Problem beim Senden Ihrer Nachricht.");
-    });
-}
-
-function displayErrorMessage(form, message) {
-    const errorMessage = document.createElement("div");
-    errorMessage.className = "error-message";
-    errorMessage.innerText = message;
-    form.appendChild(errorMessage);
-}
+    };
+    xhr.send(formData);
+});

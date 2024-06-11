@@ -1,31 +1,33 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "post") {
-    // Formularwerte abrufen und validieren
-    $kontaktgrund = htmlspecialchars($_post['kontaktgrund']);
-    $name = htmlspecialchars($_post['name']);
-    $email = htmlspecialchars($_post['email']);
-    $message = htmlspecialchars($_post['message']);
+// Überprüfen, ob das Formular gesendet wurde
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Formularwerte abrufen und bereinigen
+    $name = htmlspecialchars($_POST['name']);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $reason = htmlspecialchars($_POST['reason']);
+    $message = htmlspecialchars($_POST['message']);
 
     // E-Mail-Adresse, an die die Nachricht gesendet wird
-    $to = "gleis50.ch@gmail.com";
-    $subject = "Neue Nachricht vom Kontaktformular";
-
-    // Nachricht zusammenstellen
-    $email_content = "Kontaktgrund: $kontaktgrund\n";
-    $email_content .= "Name: $name\n";
-    $email_content .= "E-Mail: $email\n\n";
-    $email_content .= "Nachricht:\n$message\n";
+    $to = 'gleis50.ch@gmail.com';
+    // Betreff der E-Mail
+    $subject = "Neue Kontaktanfrage von $name";
+    // Inhalt der E-Mail
+    $emailContent = "Name: $name\n";
+    $emailContent .= "E-Mail: $email\n";
+    $emailContent .= "Kontaktgrund: $reason\n";
+    $emailContent .= "Nachricht:\n$message\n";
 
     // E-Mail-Header
     $headers = "From: $name <$email>";
 
-    // E-Mail senden
-    if (mail($to, $subject, $email_content, $headers)) {
-        echo "success"; // Erfolgsnachricht zurückgeben
+    // Senden der E-Mail
+    if (mail($to, $subject, $emailContent, $headers)) {
+        echo "Vielen Dank für Ihre Nachricht!";
     } else {
-        echo "error"; // Fehlermeldung zurückgeben
+        echo "Es gab ein Problem beim Senden der Nachricht.";
     }
 } else {
-    echo "Ungültige Anforderung.";
+    http_response_code(405); // Method Not Allowed
+    echo "Method Not Allowed";
 }
 ?>
