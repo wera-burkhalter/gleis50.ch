@@ -109,6 +109,19 @@ p{
     font-style: normal;
 }
 
+#mailText {
+    grid-column: 10 / span 3;
+    grid-row: 2 / span 1;
+    text-align: center;
+    color: #CC9999;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: -10%; /* Reduzierter Abstand nach oben */
+}
+
+#mailText:hover {
+    color: #A97F67; /* Farbe beim Hover */
+}
 /*form{
     background-color: #568098;
     padding: 20px;
@@ -126,8 +139,6 @@ label {
     color: #CC9999;
 }
 
-
-
 input, select, textarea {
     width: 100%;
     padding: 8px;
@@ -143,6 +154,59 @@ input, select, textarea {
     font-weight: 400;
     font-style: normal;
 }
+
+/* Kontaktgrund */
+.icon-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.icon-container {
+    text-align: center;
+    position: relative; /* Für die absolute Positionierung der Hover-Icons */
+}
+
+.icon-container input {
+    display: none; /* Versteckt das eigentliche Radio-Input */
+}
+
+.icon-container label {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-container img {
+    max-width: 100px;
+    margin-bottom: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.KontaktIcon.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.icon-container label:hover .KontaktIcon {
+    opacity: 0;
+}
+
+.icon-container label:hover .KontaktIcon.hover {
+    opacity: 1;
+}
+
+.icon-container input:checked + label .KontaktIcon {
+    opacity: 0;
+}
+
+.icon-container input:checked + label .KontaktIcon.hover {
+    opacity: 1;
+}
+
 
 /* Stile für den Absendebutton */
 button {
@@ -173,8 +237,10 @@ button:hover {
 
 /* RESPONSIVE */
 @media screen and (max-width: 1024px){
+    
     main{
         grid-template-columns: 20px repeat(12, 1fr) 20px;
+        overflow: hidden;
     }
 
     /* Diverses */
@@ -187,26 +253,46 @@ button:hover {
     #SchildStartseite {
         max-width: 100%;
         max-height: 80%;
-        grid-column: 4 / span 12;
-        grid-row: 6 / span 14;
+        grid-column: 2 / span 12;
+        grid-row: 4 / span 14;
         align-items: center;
     }
 
     h1 {
         font-size: 10vw;
-        grid-column: 4 / span 12;
-        grid-row: 9 /span 2;
+        grid-column: 2 / span 12;
+        grid-row: 7 /span 2;
         text-align: center;
     }
 
     /* Banner */
     #bannerFarbe {
-        width: 100%;
+        grid-row: 18 / span 1;
     }
 
     #bannerText {
-        grid-row: 17 / span 1;
-        font-size: 2.5vh;
+        grid-row: 18 / span 1;
     }
-    
+
+    /* Kontakformular */
+    .tituKontakt{
+        font-size: 10vw;
+        grid-row: 20 / span 1;
+    }
+    .textKontakt{
+        font-size: 3vw;
+        grid-row: 25 / span 1;
+    }
+
+    .Kontaktformular{
+        font-size: 3vw;
+        grid-row: 36 / span 20;
+    }
+
+    #fahrenderZug {
+        grid-column: 1 / span 14;
+        grid-row: 53 / span 3;
+        position: relative;
+        overflow: hidden;
+    }
 }
