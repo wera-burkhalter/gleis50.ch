@@ -1,10 +1,10 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "post") {
     // Formularwerte abrufen und validieren
-    $kontaktgrund = htmlspecialchars($_POST['kontaktgrund']);
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
+    $kontaktgrund = htmlspecialchars($_post['kontaktgrund']);
+    $name = htmlspecialchars($_post['name']);
+    $email = htmlspecialchars($_post['email']);
+    $message = htmlspecialchars($_post['message']);
 
     // E-Mail-Adresse, an die die Nachricht gesendet wird
     $to = "gleis50.ch@gmail.com";
