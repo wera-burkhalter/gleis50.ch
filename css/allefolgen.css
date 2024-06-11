@@ -50,47 +50,115 @@ h4 {
 }
 
 
-#boxFolgeSpecial {
+#boxFolgeFünf {
     grid-column: 1 / span 14;
     grid-row: 25 / span 9;
     background-color: #568098;
 }
-#spotifySpecial {
+#spotifyFünf1 {
+    grid-column: 2 / span 5;
+    grid-row: 26 / span 8;
+    width: 100%;
+    height: 150%;
+    border: none;
+}
+#spotifyFünf2 {
     grid-column: 2 / span 5;
     grid-row: 26 / span 8;
     width: 100%;
     height: 150%;
 }
-#speicalTitel {
+/* #nextButtonFünf{
+        grid-column: 7 / span 1;
+        grid-row: 29 / span 1;
+        margin-top: 15%;
+        margin-left: -50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        font-size: 2.5em;
+        cursor: pointer;
+        color: #CC9999;
+        font-family: "hoss-round", sans-serif;
+} */
+#nextButtonFünf:hover {
+    color: #568098;
+}
+#fünfTitel {
     grid-column: 7 / span 7;
     grid-row: 26 / span 1;
     margin-top: 0;
     margin-left: 10%;
 }
-#specialText {
-    font-size: 1.8vw;
+#fünfUnttitel01 {
     grid-column: 7 / span 6;
-    grid-row: 27 / span 8;
+    grid-row: 26 / span 1;
     margin-left: 19%;
-    margin-top: 10%;
+    margin-top: 12%;
+}
+#fünfText01 {
+    grid-column: 7 / span 6;
+    grid-row: 27 / span 2;
+    margin-left: 19%;
+    margin-top: 9%;
+}
+/* #fünfUnttitel02 {
+    grid-column: 7 / span 6;
+    grid-row: 29 / span 1;
+    margin-left: 19%;
+}
+#fünfText02 {
+    grid-column: 7 / span 6;
+    grid-row: 30 / span 2;
+    margin-left: 19%;
+} */
+
+
+
+
+
+#spotifySpecial {
+    grid-column: 2 / span 5;
+    grid-row: 35 / span 8;
+    width: 100%;
+    height: 150%;
+}
+#speicalTitel {
+    font-size: 3.3vw;
+    grid-column: 7 / span 7;
+    grid-row: 35 / span 1;
+    margin-top: 0;
+    margin-left: 10%;
+}
+#specialText {
+    grid-column: 7 / span 6;
+    grid-row: 35 / span 8;
+    margin-left: 19%;
+    margin-top: 15%;
 }
 
 
+
+#boxFolgeVier {
+    grid-column: 1 / span 14;
+    grid-row: 43 / span 9;
+    background-color: #568098;
+}
 #spotifyVier1 {
     grid-column: 2 / span 5;
-    grid-row: 35 / span 8;
+    grid-row: 44 / span 8;
     width: 100%;
     height: 150%;
 }
 #spotifyVier2 {
     grid-column: 2 / span 5;
-    grid-row: 35 / span 8;
+    grid-row: 44 / span 8;
     width: 100%;
     height: 150%;
 }
 #nextButtonVier{
         grid-column: 7 / span 1;
-        grid-row: 38 / span 1;
+        grid-row: 47 / span 1;
         margin-top: 15%;
         margin-left: -50%;
         transform: translateY(-50%);
@@ -106,52 +174,50 @@ h4 {
 }
 #vierTitel {
     grid-column: 7 / span 7;
-    grid-row: 35 / span 1;
+    grid-row: 44 / span 1;
     margin-top: 0;
     margin-left: 10%;
 }
 #vierUnttitel01 {
     grid-column: 7 / span 6;
-    grid-row: 36 / span 1;
+    grid-row: 44 / span 1;
     margin-left: 19%;
+    margin-top: 12%;
 }
 #vierText01 {
     grid-column: 7 / span 6;
-    grid-row: 37 / span 2;
+    grid-row: 45 / span 2;
     margin-left: 19%;
+    margin-top: 9%;
 }
 #vierUnttitel02 {
     grid-column: 7 / span 6;
-    grid-row: 39 / span 1;
+    grid-row: 48 / span 1;
     margin-left: 19%;
 }
 #vierText02 {
     grid-column: 7 / span 6;
-    grid-row: 40 / span 2;
+    grid-row: 49 / span 2;
     margin-left: 19%;
 }
 
 
-#boxFolgeDrei {
-    grid-column: 1 / span 14;
-    grid-row: 43 / span 9;
-    background-color: #568098;
-}
+
 #spotifyDrei1 {
     grid-column: 2 / span 5;
-    grid-row: 44 / span 8;
+    grid-row: 53 / span 8;
     width: 100%;
     height: 150%;
 }
 #spotifyDrei2 {
     grid-column: 2 / span 5;
-    grid-row: 44 / span 8;
+    grid-row: 53 / span 8;
     width: 100%;
     height: 150%;
 }
 #nextButtonDrei{
     grid-column: 7 / span 1;
-    grid-row: 47 / span 1;
+    grid-row: 56 / span 1;
     margin-top: 15%;
     margin-left: -50%;
     transform: translateY(-50%);
@@ -167,49 +233,58 @@ color: #A97F67;
 }
 #dreiTitel {
     grid-column: 7 / span 7;
-    grid-row: 44 / span 1;
+    grid-row: 53 / span 1;
     margin-top: 0;
     margin-left: 10%;
 }
 #dreiUnttitel01 {
     grid-column: 7 / span 6;
-    grid-row: 45 / span 1;
+    grid-row: 53 / span 1;
     margin-left: 19%;
+    margin-top: 12%;
 }
 #dreiText01 {
     grid-column: 7 / span 6;
-    grid-row: 46 / span 2;
+    grid-row: 54 / span 2;
     margin-left: 19%;
+    margin-top: 9%;
 }
 #dreiUnttitel02 {
     grid-column: 7 / span 6;
-    grid-row: 47 / span 1;
-    margin-top: 7%;
+    grid-row: 56 / span 1;
     margin-left: 19%;
 }
 #dreiText02 {
     grid-column: 7 / span 6;
-    grid-row: 48 / span 2;
+    grid-row: 57 / span 2;
     margin-left: 19%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 
+
+
+
+#boxFolgeZwei {
+    grid-column: 1 / span 14;
+    grid-row: 61 / span 9;
+    background-color: #568098;
+}
 #spotifyZwei1 {
     grid-column: 2 / span 5;
-    grid-row: 53 / span 8;
+    grid-row: 62 / span 8;
     width: 100%;
     height: 150%;
 }
 #spotifyZwei2 {
     grid-column: 2 / span 5;
-    grid-row: 53 / span 8;
+    grid-row: 62 / span 8;
     width: 100%;
     height: 150%;
 }
 #nextButtonZwei{
     grid-column: 7 / span 1;
-    grid-row: 56 / span 1;
+    grid-row: 65 / span 1;
     margin-top: 15%;
     margin-left: -50%;
     transform: translateY(-50%);
@@ -225,56 +300,52 @@ color: #568098;
 }
 #zweiTitel {
     grid-column: 7 / span 7;
-    grid-row: 53 / span 1;
+    grid-row: 62 / span 1;
     margin-top: 0;
     margin-left: 10%;
 }
 #zweiUnttitel01 {
     grid-column: 7 / span 6;
-    grid-row: 54 / span 1;
+    grid-row: 62 / span 1;
     margin-left: 19%;
+    margin-top: 12%;
 }
 #zweiText01 {
     grid-column: 7 / span 6;
-    grid-row: 55 / span 2;
+    grid-row: 63 / span 2;
     margin-left: 19%;
+    margin-top: 9%;
 }
 #zweiUnttitel02 {
     grid-column: 7 / span 6;
-    grid-row: 57 / span 1;
+    grid-row: 66 / span 1;
     margin-left: 19%;
-    margin-top: 7%;
 }
 #zweiText02 {
     grid-column: 7 / span 6;
-    grid-row: 58 / span 2;
+    grid-row: 67 / span 2;
     margin-left: 19%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 
 
-#boxFolgeEins {
-    grid-column: 1 / span 14;
-    grid-row: 61 / span 9;
-    background-color: #568098;
-}
 #spotifyEins {
     grid-column: 2 / span 5;
-    grid-row: 62 / span 8;
+    grid-row: 71 / span 8;
     width: 100%;
     height: 150%;
 }
 #einsTitel {
     grid-column: 7 / span 7;
-    grid-row: 62 / span 1;
+    grid-row: 71 / span 1;
     margin-top: 0;
     margin-left: 10%;
 }
 #einsText {
     font-size: 1.8vw;
     grid-column: 7 / span 6;
-    grid-row: 63 / span 8;
+    grid-row: 72 / span 8;
     margin-left: 19%;
     margin-top: 10%;
 }
@@ -293,12 +364,12 @@ color: #568098;
         max-width: 100%;
         max-height: 80%;
         grid-row: 2 / span 14;
-
+        margin-top: 15%;
     }
     h1 {
-        grid-row: 3 /span 3;
+        grid-row: 5 /span 3;
         font-size: 12vw;
-        margin-top: 8vh;
+        margin-top: 10%;
     }
 
     p {
@@ -316,61 +387,99 @@ color: #568098;
         font-size: 2.5vh;
     }
 
-    #fahrenderZug {
-        grid-row: 63 / span 4;
-    }
-
-    #boxFolgeSpecial {
+    #boxFolgeFünf {
         grid-row: 22 / span 9;
     }
-    #spotifySpecial {
+    #spotifyFünf1 {
         grid-row: 23 / span 8;
     }
-    #speicalTitel {
-        grid-row: 23 / span 1;
-    }
-    #specialText {
-        font-size: 2.5vw;
+    #spotifyFünf2 {
         grid-row: 23 / span 8;
-        margin-top: 15%;
     }
-
-
-    #spotifyVier1 {
-        grid-row: 32 / span 8;
-    }
-    #spotifyVier2 {
-        grid-row: 32 / span 8;
-    }
-    #nextButtonVier{
+    #nextButtonFünf{
         grid-row: 35 / span 1;
         margin-left: -30%;
         font-size: 3em;
     }
-    #vierTitel {
-        grid-row: 31 / span 1;
+    #fünfTitel {
+        grid-row: 23 / span 1;
+    }
+    #fünfUnttitel01 {
+        grid-column: 7 / span 7;
+        grid-row: 23 / span 1;
+        margin-left: 17%;
         margin-top: 12%;
+    }
+    #fünfText01 {
+        grid-row: 24 / span 2;
+        grid-column: 7 / span 7;
+        margin-top: 8%;
+        margin-left: 19%;
+    }
+    /* #fünfUnttitel02 {
+        grid-column: 7 / span 7;
+        grid-row: 35 / span 2;
+        margin-top: 13%;
+        margin-left: 17%;
+    }
+    #fünfText02 {
+        grid-row: 35 / span 2;
+        grid-column: 7 / span 7;
+        margin-top: 18%;
+        margin-left: 19%;
+    } */
+
+
+    #spotifySpecial {
+        grid-row: 32 / span 8;
+    }
+    #speicalTitel {
+        grid-row: 32 / span 1;
+    }
+    #specialText {
+        font-size: 2.5vw;
+        grid-row: 32 / span 8;
+        margin-top: 15%;
+    }
+
+
+    #boxFolgeVier {
+        grid-row: 40 / span 9;
+    }
+    #spotifyVier1 {
+        grid-row: 41 / span 8;
+    }
+    #spotifyVier2 {
+        grid-row: 41 / span 8;
+    }
+    #nextButtonVier{
+        grid-row: 44 / span 1;
+        margin-left: -30%;
+        font-size: 3em;
+    }
+    #vierTitel {
+        grid-row: 41 / span 1;
     }
     #vierUnttitel01 {
         grid-column: 7 / span 7;
-        grid-row: 32 / span 1;
+        grid-row: 41 / span 1;
         margin-left: 17%;
         margin-top: 12%;
     }
     #vierText01 {
-        grid-row: 33 / span 2;
+        grid-row: 42 / span 2;
         grid-column: 7 / span 7;
         margin-top: 8%;
         margin-left: 19%;
     }
     #vierUnttitel02 {
         grid-column: 7 / span 7;
-        grid-row: 35 / span 2;
-        margin-top: 13%;
+        grid-row: 44 / span 2;
+        margin-top: 12%;
         margin-left: 17%;
     }
     #vierText02 {
-        grid-row: 35 / span 2;
+        grid-row: 44 / span 2;
         grid-column: 7 / span 7;
         margin-top: 18%;
         margin-left: 19%;
@@ -378,104 +487,103 @@ color: #568098;
 
 
 
-    #boxFolgeDrei {
-        grid-row: 40 / span 9;
-    }
     #spotifyDrei1 {
-        grid-row: 41 / span 8;
+        grid-row: 50 / span 8;
     }
     #spotifyDrei2 {
-        grid-row: 41 / span 8;
+        grid-row: 50 / span 8;
     }
     #nextButtonDrei{
-        grid-row: 44 / span 1;
+        grid-row: 53 / span 1;
         margin-left: -30%;
         font-size: 3em;
     }
     #dreiTitel {
-        grid-row: 41/ span 1;
+        grid-row: 50 / span 1;
         margin-left: 12%;
     }
     #dreiUnttitel01 {
         grid-column: 7 / span 7;
-        grid-row: 41 / span 1;
+        grid-row: 50 / span 1;
         margin-top: 10%;
         margin-left: 17%;
     }
     #dreiText01 {
         grid-column: 7 / span 7;
-        grid-row: 42 / span 2;
+        grid-row: 51 / span 2;
         margin-top: 6%;
         margin-left: 19%;
     }
     #dreiUnttitel02 {
         grid-column: 7 / span 7;
-        grid-row: 44 / span 1;
+        grid-row: 53 / span 1;
         margin-left: 17%;
     }
     #dreiText02 {
         grid-column: 7 / span 7;
-        grid-row: 44 / span 2;
+        grid-row: 53 / span 2;
         margin-left: 19%;
         margin-top: 13%;
     }
 
 
+
+    #boxFolgeZwei {
+        grid-row: 58 / span 9;
+    }
     #spotifyZwei1 {
-        grid-row: 50 / span 8;
+        grid-row: 59 / span 8;
     }
     #spotifyZwei2 {
-        grid-row: 50 / span 8;
+        grid-row: 59 / span 8;
     }
     #nextButtonZwei{
-        grid-row: 53 / span 1;
+        grid-row: 62 / span 1;
         margin-left: -30%;
         font-size: 3em;
     }
     #zweiTitel {
-        grid-row: 50 / span 1;
+        grid-row: 59 / span 1;
         margin-top: 0;
         margin-left: 12%;
     }
     #zweiUnttitel01 {
         grid-column: 7 / span 7;
-        grid-row: 50 / span 1;
+        grid-row: 59 / span 1;
         margin-top: 10%;
         margin-left: 17%;
     }
     #zweiText01 {
         grid-column: 7 / span 7;
-        grid-row: 51 / span 2;
+        grid-row: 60 / span 2;
         margin-top: 6%;
         margin-left: 19%;
     }
     #zweiUnttitel02 {
         grid-column: 7 / span 7;
-        grid-row: 54 / span 1;
+        grid-row: 63 / span 1;
         margin-top: 10%;
         margin-left: 17%;
     }
     #zweiText02 {
         grid-column: 7 / span 7;
-        grid-row: 55 / span 2;
+        grid-row: 64 / span 2;
         margin-left: 19%;
         margin-top: 6%;
     }
 
-    #boxFolgeEins {
-        grid-row: 58 / span 9;
-    }
+
     #spotifyEins {
-        grid-row: 59 / span 8;
+        grid-row: 68 / span 8;
     }
     #einsTitel {
-        grid-row: 59 / span 1;
+        grid-row: 68 / span 1;
         margin-left: 12%;
     }
     #einsText {
         font-size: 1.8vw;
         grid-column: 7 / span 7;
-        grid-row: 59 / span 8;
+        grid-row: 68 / span 8;
         margin-left: 19%;
         font-size: 2.5vw;
     }
@@ -510,7 +618,7 @@ color: #568098;
     }
 
     #fahrenderZug {
-        grid-row: 70 / span 4;
+        grid-row: 80 / span 4;
     }
 }
 
@@ -518,15 +626,12 @@ color: #568098;
     #SchildStartseite {
         max-width: 100%;
         max-height: 50%;
-        grid-row: 1 / span 14;
-        margin-top: 25%;
+        grid-row: 2 / span 14;
     }
     h1 {
-        grid-row: 3 /span 3;
+        grid-row: 4 /span 3;
         font-size: 12vw;
-        margin-top: 12vh;
     }
-
     p {
         font-size: 2.3vw;
     }
@@ -535,257 +640,347 @@ color: #568098;
     }
     /*BANNER*/
     #bannerFarbe {
-        grid-row: 13 / span 1;
+        grid-row: 12 / span 2;
+        height: 25%;
+        align-self: center;
     }
     #bannerText {
-        grid-row: 13 / span 1;
-        font-size: 3.5vh;
+        grid-row: 12 / span 2;
+        font-size: 2vh;
     }
 
-    #boxFolgeSpecial {
-        grid-row: 18 / span 9;
+
+    #boxFolgeFünf {
+        grid-row: 18 / span 10;
     }
-    #spotifySpecial {
-        grid-column: 2 / span 12;
+    #spotifyFünf1 {
         grid-row: 19 / span 4;
+        grid-column: 2 / span 12;
         width: 100%;
     }
-    #speicalTitel {
+    #spotifyFünf2 {
+        grid-row: 19 / span 4;
+        grid-column: 2 / span 12;
+        width: 100%;
+    }
+    /* #nextButtonFünf{
+        grid-row: 20 / span 1;
+        grid-column: 13 / span 2;
+        margin-left: -30%;
+        font-size: 3em;
+    } */
+    #fünfTitel {
         grid-row: 24 / span 1;
         grid-column: 2 / span 12;
         font-size: 4vh;
         margin-left: 0;
     }
-    #specialText {
+    #fünfUnttitel01 {
         font-size: 3vw;
-        grid-row: 24 / span 8;
         grid-column: 2 / span 12;
-        margin-top: 10%;
+        grid-row: 24 / span 1;
         margin-left: 4%;
     }
-
-
-    #spotifyVier1 {
-        grid-row: 28 / span 4;
-        grid-column: 2 / span 9;
-        width: 90%;
-    }
-    #spotifyVier2 {
-        grid-row: 28 / span 4;
-        grid-column: 2 / span 12;
-        width: 90%;
-    }
-    #nextButtonVier{
-        grid-row: 30 / span 1;
-        grid-column: 13 / span 2;
-        margin-left: -30%;
-        font-size: 3em;
-    }
-    #vierTitel {
-        grid-row: 32 / span 1;
-        grid-column: 2 / span 12;
-        font-size: 4vh;
-        margin-left: 0;
-    }
-    #vierUnttitel01 {
+    #fünfText01 {
         font-size: 3vw;
-        grid-column: 2 / span 12;
-        grid-row: 33 / span 1;
-        margin-top: 8%;
-        margin-left: 4%;
-    }
-    #vierText01 {
-        font-size: 3vw;
-        grid-row: 33 / span 2;
+        grid-row: 25 / span 2;
         grid-column: 2 / span 11;
-        margin-top: 13%;
+        margin-top: 3%;
         margin-left: 4%;
     }
-    #vierUnttitel02 {
+    /* #fünfUnttitel02 {
         font-size: 3vw;
         grid-column: 2 / span 12;
         grid-row: 34 / span 1;
         margin-top: 17%;
         margin-left: 4%;
     }
-    #vierText02 {
+    #fünfText02 {
         font-size: 3vw;
         grid-row: 35 / span 2;
         grid-column: 2 / span 11;
         margin-top: 11%;
         margin-left: 4%;
+    } */
+
+
+
+
+    #spotifySpecial {
+        grid-column: 2 / span 12;
+        grid-row: 29 / span 4;
+        width: 100%;
+    }
+    #speicalTitel {
+        grid-row: 34 / span 1;
+        grid-column: 2 / span 12;
+        font-size: 3.3vh;
+        margin-left: 0;
+    }
+    #specialText {
+        font-size: 3vw;
+        grid-row: 34 / span 8;
+        grid-column: 2 / span 12;
+        margin-top: 14%;
+        margin-left: 4%;
     }
 
 
-
-    #boxFolgeDrei {
+    #boxFolgeVier {
         grid-row: 37 / span 11;
         margin-top: 6%;
     }
-    #spotifyDrei1 {
+    #spotifyVier1 {
         grid-row: 38 / span 4;
         grid-column: 2 / span 12;
         width: 90%;
-        margin-top: 6%;
+        margin-top: 9%;
+    }
+    #spotifyVier2 {
+        grid-row: 38 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
+        margin-top: 9%;
+    }
+    #nextButtonVier{
+        grid-row: 40 / span 1;
+        grid-column: 13 / span 2;
+        margin-left: -30%;
+        font-size: 3em;
+    }
+    #vierTitel {
+        grid-row: 43 / span 1;
+        grid-column: 2 / span 12;
+        font-size: 4vh;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+    #vierUnttitel01 {
+        font-size: 3vw;
+        grid-column: 2 / span 12;
+        grid-row: 43 / span 1;
+        margin-top: 20%;
+        margin-left: 4%;
+    }
+    #vierText01 {
+        font-size: 3vw;
+        grid-row: 44 / span 2;
+        grid-column: 2 / span 11;
+        margin-left: 4%;
+        margin-top: 10%;
+    }
+    #vierUnttitel02 {
+        font-size: 3vw;
+        grid-column: 2 / span 12;
+        grid-row: 45 / span 1;
+        margin-left: 4%;
+    }
+    #vierText02 {
+        font-size: 3vw;
+        grid-row: 45 / span 2;
+        grid-column: 2 / span 11;
+        margin-left: 4%;
+    }
+
+
+    #spotifyDrei1 {
+        grid-row: 49 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
     }
     #spotifyDrei2 {
-        grid-row: 38 / span 4;
+        grid-row: 49 / span 4;
         grid-column: 2 / span 12;
         width: 90%;
-        margin-top: 6%;
     }
     #nextButtonDrei{
         grid-column: 13 / span 2;
-        grid-row: 41 / span 1;
+        grid-row: 51 / span 1;
         margin-left: -30%;
         font-size: 3em;
-        margin-top: -8%;
+        margin-top: -10%;
     }
     #dreiTitel {
         grid-column: 2 / span 12;
-        grid-row: 43/ span 1;
+        grid-row: 54 / span 1;
         font-size: 4vh;
         margin-left: 0;
-        margin-top: 6%;
     }
     #dreiUnttitel01 {
         grid-column: 2 / span 12;
-        grid-row: 43 / span 1;
+        grid-row: 54 / span 1;
         font-size: 3vw;
         margin-left: 4%;
         margin-top: 13%;
     }
     #dreiText01 {
         grid-column: 2 / span 11;
-        grid-row: 44 / span 2;
-        margin-top: 7%;
+        grid-row: 55 / span 2;
+        margin-top: 3%;
         margin-left: 4%;
         font-size: 3vw;
     }
     #dreiUnttitel02 {
         grid-column: 2 / span 12;
-        grid-row: 44 / span 1;
+        grid-row: 55 / span 1;
         margin-left: 4%;
         margin-top: 16%;
         font-size: 3vw;
     }
     #dreiText02 {
         grid-column: 2 / span 11;
-        grid-row: 45 / span 2;
-        margin-top: 10%;
+        grid-row: 55 / span 2;
+        margin-top: 23%;
         margin-left: 4%;
         font-size: 3vw;
+    } 
+
+
+    #boxFolgeZwei {
+        grid-row: 58 / span 10;
     }
-
-
     #spotifyZwei1 {
-        grid-row: 48 / span 4;
+        grid-row: 59 / span 4;
         grid-column: 2 / span 12;
         width: 90%;
-        margin-top: 10%;
     }
     #spotifyZwei2 {
-        grid-row: 48 / span 4;
+        grid-row: 59 / span 4;
         grid-column: 2 / span 12;
         width: 90%;
-        margin-top: 10%;
     }
     #nextButtonZwei{
         grid-column: 13 / span 2;
-        grid-row: 51 / span 1;
+        grid-row: 61 / span 1;
         margin-top: 10%;
         margin-left: -30%;
         font-size: 3em;
     }
     #zweiTitel {
         grid-column: 2 / span 12;
-        grid-row: 54 / span 1;
+        grid-row: 64 / span 1;
         font-size: 4vh;
         margin-left: 0;
-        margin-top: -2%;
     }
     #zweiUnttitel01 {
         grid-column: 2 / span 12;
-        grid-row: 53 / span 1;
+        grid-row: 64 / span 1;
         font-size: 3vw;
         margin-left: 4%;
-        margin-top: 16%;
+        margin-top: 13%;
     }
     #zweiText01 {
         grid-column: 2 / span 11;
-        grid-row: 54 / span 1;
-        margin-top: 10%;
+        grid-row: 64 / span 1;
         margin-left: 4%;
+        margin-top: 20%;
         font-size: 3vw;
     }
     #zweiUnttitel02 {
         grid-column: 2 / span 12;
-        grid-row: 55 / span 1;
+        grid-row: 66 / span 1;
         font-size: 3vw;
         margin-left: 4%;
     }
     #zweiText02 {
-        grid-column: 7 / span 7;
-        grid-row: 55 / span 2;
-        margin-left: 19%;
-        margin-top: 6%;
+        grid-column: 2 / span 11;
+        grid-row: 66 / span 2;
+        margin-left: 4%;
+        margin-top: 16%;
     }
 
-    #boxFolgeEins {
-        grid-row: 58 / span 9;
-    }
+
     #spotifyEins {
-        grid-row: 58 / span 4;
+        grid-row: 69 / span 4;
         grid-column: 2 / span 14;
         width: 90%;
-        margin-top: 10%;
     }
     #einsTitel {
         grid-column: 2 / span 12;
-        grid-row: 64 / span 1;
+        grid-row: 74 / span 1;
         font-size: 4vh;
         margin-left: 0;
     }
     #einsText {
         font-size: 1.8vw;
         grid-column: 2 / span 11;
-        grid-row: 64 / span 8;
-        margin-top: 10%;
+        grid-row: 74 / span 8;
+        margin-top: 15%;
         margin-left: 4%;
         font-size: 3vw;
-    }
+    } 
 
-    /*HEADER*/
+
+
+    .headerLinks {
+        text-decoration: none;
+        color: #CC9999;
+        padding: 10px;
+    }
+    #burger-menu {
+        display: block; /* Show the burger menu icon */
+        position: absolute;
+        right: 5%;
+        top: 25%;
+        height: 15vw;
+        cursor: pointer;
+    }
+    .dropdown-menu a {
+        display: block;
+        padding: 10px;
+    }
     header {
-        height: 8%; /* Reduziere die Höhe des Headers */
+        padding-bottom: 7%;
     }
     .headerLinks {
-        font-size: 2.3vh; /* Verkleinere die Schriftgröße */
+        display: none; /* Hide header links */
     }
     #headerLogo {
-        height: 10vw; /* Verkleinere die Höhe des Logos */
-        margin-top: 1%;;
-    }
-    #menu {
-        margin-top: 2%; /* Verringere den oberen Rand des Menüs */
+        display: none; /* Hide the header logo */
     }
     #left-menu, #right-menu {
-        gap: 50px; /* Verringere den Abstand zwischen den Links */
-        margin: 0 10px; /* Verringere die äußeren Abstände */
+        display: none; /* Hide left and right menus */
     }
-    /*FOOTER*/
-    .socialMediaIcon {
-        height: 3vh;
-        max-width: 3vh;
+    .logoHeader {
+        display: block; 
+        height: 100%;
+        margin-top: 5%;
+        margin-left: 2%;
     }
-    .footerText {
-        font-size: 1.5vh;
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10; /* Ensure the overlay is above other elements */
     }
-    #mail {
-        font-size: 1.5vh;
+    .close-button {
+        position: absolute;
+        top: 15px;
+        right: 40px;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 30; /* Ensure the close button is above other elements */
+        color: #CC9999;
     }
 
+
+        /*FOOTER*/
+        .socialMediaIcon {
+            height: 2vh;
+            max-width: 2vh;
+        }
+        .footerText {
+            font-size: 1vh;
+        }
+         #mail {
+            font-size: 1vh;
+        }
+
     #fahrenderZug {
-        grid-row: 70 / span 2;
+        grid-row: 80 / span 2;
     }
 }
