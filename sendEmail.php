@@ -26,5 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Es gab ein Problem beim Senden der Nachricht.";
     }
+} else {
+    http_response_code(405); // Method Not Allowed
+    echo "Method Not Allowed";
 }
 ?>
