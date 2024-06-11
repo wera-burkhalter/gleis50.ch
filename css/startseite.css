@@ -164,7 +164,7 @@ h2 {
     overflow: hidden;
     position: relative;
 }
-/* .lightwidget-widget {
+.lightwidget-widget {
     grid-column: 2 / span 12;
     grid-row: 57 / span 1;
     margin-top: 2.5%;
@@ -172,7 +172,7 @@ h2 {
     border: 0;
     overflow: hidden;
     z-index: 1;
-} */
+}
 
 
 
