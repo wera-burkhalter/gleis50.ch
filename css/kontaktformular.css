@@ -91,181 +91,47 @@ p{
 /* *** */
 
 /* KONTAKTFORMULAR */
-.formular {
-    grid-area: 27 / 4 / span 10 / span 9;
-    align-self: center;
+.Kontaktformular{
+    grid-column: 3 / span 10;
+    grid-row: 50 / span 1;
+    text-align: center;
+    font-size: 20px;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 form{
-    max-width: 80%;
-    font-family: "pill-gothic-600mg", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #c49b9a;
+    background-color: #568098;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
-#formularName, #formularEMail, #formularGrund, #formularNachricht {
-    text-align: center; 
-    font-size: 50px;
-    font-family: "hoss-round", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    color: rgb(204, 153, 153);
-}
-
-input{
-    border-radius: 11.66px;
-    background: #5f7e95;
-    /*backdrop-filter: blur(5px);*/
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
-    color: #c49b9a;
-    font-family: "pill-gothic-600mg", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.8vw;
-}
-
-/*select{ -> hei mer nümme dinne
-    border-radius: 20px;
-    background: #5f7e95;
-    backdrop-filter: blur(5px); -> ds eigentlech usblände
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
-    color: #c49b9a;
-    font-family: "pill-gothic-600mg", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 0.8vw;
-    margin-left: 0;
-}*/
-
-textarea{
-    border-radius: 20px;
-    height: 200px;
-    background: #5f7e95;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    /*backdrop-filter: blur(5px);*/
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    resize: none;
-
-    color: #c49b9a;
-    font-family: "pill-gothic-600mg", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.8vw;
-}
-
-/*option{
-    border-radius: 199px;
-    color: black;
-    font-family: "pill-gothic-600mg", sans-serif;
-}*/
-
-button{
-    border-radius: 20px;
-    background-color: #5f7e95;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    font-family: "pill-gothic-600mg", sans-serif;
-    width: auto;
-    height: auto;
-}
-
-label{
+/* Stile für Formularfelder und Labels */
+label {
     display: block;
-    margin-bottom: 8px;
-    font-family: "pill-gothic-600mg", sans-serif;
-    font-size: 18px;
-}
-
-input,
-textarea,
-select {
-    width: 100%;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-}
-
-.success-message {
-    display: none; /* Standardmäßig ausgeblendet */
-    color: green;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-.error-message {
-    color: red;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-/*.success-message {
-    background-color: #4CAF50;
-    color: white;
-    margin-top: 2.5%;
-    padding: 12px 20px;
-    border-radius: 20px;
-    display: none;
-}*/
-
-/*.contact-reason label { -> ke ahnig für was das steit
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}*/
-
-/* Kontaktgrund */
-.icon-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-}
-
-.icon-container {
-    text-align: center;
-    position: relative; /* Für die absolute Positionierung der Hover-Icons */
-}
-
-.icon-container input {
-    display: none; /* Versteckt das eigentliche Radio-Input */
-}
-
-.icon-container label {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.icon-container img {
-    max-width: 100px;
     margin-bottom: 5px;
-    transition: opacity 0.3s ease;
+    color: #333333;
 }
 
-.KontaktIcon.hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
+input, select, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
 }
 
-.icon-container label:hover .KontaktIcon {
-    opacity: 0;
+/* Stile für den Absendebutton */
+button {
+    background-color: #568098;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.icon-container label:hover .KontaktIcon.hover {
-    opacity: 1;
+button:hover {
+    background-color: #466080;
 }
-
-.icon-container input:checked + label .KontaktIcon {
-    opacity: 0;
-}
-
-.icon-container input:checked + label .KontaktIcon.hover {
-    opacity: 1;
-}
-/* KONTAKTFORMULAR ENDE */
