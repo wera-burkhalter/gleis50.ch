@@ -18,13 +18,14 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     const formData = new FormData(this);
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'sendEmail.php'); // Setze hier den Pfad zu deinem Server-Skript ein
+    xhr.open('POST', 'sendEmail.php'); 
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             const responseMessage = document.getElementById('responseMessage');
             if (xhr.status === 200) {
                 responseMessage.textContent = 'Vielen Dank für Ihre Nachricht!';
                 responseMessage.style.display = 'block';
+                document.getElementById('contactForm').reset();
             } else {
                 responseMessage.textContent = 'Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut.';
                 responseMessage.style.display = 'block';
