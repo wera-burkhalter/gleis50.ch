@@ -73,7 +73,7 @@ header {
     background-color: #568098;
     width: 100%;
     text-align: center;
-    padding-top: 40px; /* Add padding to make space for the close button */
+    padding-top: 30px; /* Add padding to make space for the close button */
 }
 
 .dropdown-menu a {
