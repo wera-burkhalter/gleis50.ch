@@ -12,7 +12,8 @@
 
 </head>
 
-<header id="header" class="hidden">
+<header id="header">
+    <img src="bilder/Logo_Gleis50_2024.png" id="logoHeader" class="logoHeader" alt="gleis50_logo">
     <div id="menu">
         <div id="left-menu">
             <a class="headerLinks" href="index.html">START</a>
@@ -26,12 +27,14 @@
         <img src="bilder/MenuIcon.png" id="burger-menu" class="burger-menu" alt="Burger Menu">
     </div>
     <div id="dropdown-menu" class="dropdown-menu hidden">
+        <span id="close-button" class="close-button">&times;</span>
         <a class="headerLinks" href="index.html">START</a>
         <a class="headerLinks" href="allefolgen.html">AUI FOUGE</a>
         <a class="headerLinks" href="ueberuns.html">ÜBER ÜS</a>
         <a class="headerLinks" href="kontaktformular.html">KONTAKT</a>
     </div>
 </header>
+<div id="overlay" class="overlay hidden"></div>
 
 
 <body>
@@ -51,12 +54,23 @@
             jedi zwöiti Wuche zwöi neui Fouge
         </marquee>
 
-        <div id="boxFolgeSpecial"></div>
+        <div id="boxFolgeFünf"></div>
+        <iframe id="spotifyFünf1" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3RRXrp3KyTDcDhhskTfSzH?utm_source=generator&theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <!-- <iframe id="spotifyFünf2" style="border-radius:12px" src="https://open.spotify.com/embed/episode/4G7I4do0PlNtVRizJBCUYJ?utm_source=generator&theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
+        <!-- <button id="nextButtonFünf">→</button> -->
+        <h3 id="fünfTitel">#05 Studium</h3>
+            <h4 id="fünfUnttitel01">#05.01 mit üs im Abteil: Beziehige</h4>
+                <p id="fünfText01">Mir si beidi sit emne Zizli ihre Beziehig und hei so scho positivi u negativi Erfahrige gmacht. Aber nid aui Beziehige hei di gliche Struggles, drum tusche mir üs hüt über üsi ungerschidleche Erfahrige us. </p>
+            <!-- <h4 id="fünfUnttitel02">#05.02 Beatrice Wespi: Beziehige</h4>
+                <p id="fünfText02">Üses zwöite Semster isch gli verbi und mir luege zrügg uf üsi erste Erfahrige aus Studäntinne.</p> -->
+
+
+
         <iframe id="spotifySpecial" style="border-radius:12px" src="https://open.spotify.com/embed/episode/7KKPtFODDdkkX8lThGBSCd?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <h3 id="speicalTitel">#Special Abstimmige</h3>
         <p id="specialText">Die Wuche hei mer eh chlini Überraschig für öich, obwou nid Upload-Wuche isch chunnt eh Gastfoug online. Mir rede ih dere Foug mitm Thomas Stucki über Politik ir Schwiz und wies de junge Lüt, und ou üs säuber, dermit so geit.</p> 
 
-
+        <div id="boxFolgeVier"></div>
         <iframe id="spotifyVier1"  style="border-radius:12px" src="https://open.spotify.com/embed/episode/0atzFg5ouXpeg9sMcPsKVb?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <iframe id="spotifyVier2" style="border-radius:12px" src="https://open.spotify.com/embed/episode/4G7I4do0PlNtVRizJBCUYJ?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <button id="nextButtonVier">→</button>
@@ -67,8 +81,6 @@
                 <p id="vierText02">Üses zwöite Semster isch gli verbi und mir luege zrügg uf üsi erste Erfahrige aus Studäntinne.</p>
 
 
-
-    <div id="boxFolgeDrei"></div>
         <iframe id="spotifyDrei1" style="border-radius:12px" src="https://open.spotify.com/embed/episode/6B7DHWk0hmJwqnMr4qhlsq?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>            
         <iframe id="spotifyDrei2" style="border-radius:12px" src="https://open.spotify.com/embed/episode/22cEPJIucHmnxTA2IBqanq?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <button id="nextButtonDrei">→</button>
@@ -78,8 +90,7 @@
             <h4 id="dreiUnttitel02">#03.02 Jonas Probst: Zwüschejohr</h4>
                 <p id="dreiText02">Hüt sitze mir mitm Loufbahnpsycholog Jonas Probst im Podcaststudio. Mir rede über üsi Bruefserfahrige, wie meh usefingt was meh wott wärde, was wichtig isch ihr Bruefswäut u viles meh!</p>
 
-
-
+        <div id="boxFolgeZwei"></div>
         <iframe id="spotifyZwei1" style="border-radius:12px" src="https://open.spotify.com/embed/episode/5Zcq5BsXCqaTcidmOOVjIt?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <iframe id="spotifyZwei2" style="border-radius:12px" src="https://open.spotify.com/embed/episode/2aLC2iXWiWBwDHzwKlqjBX?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <button id="nextButtonZwei">→</button>
@@ -90,8 +101,6 @@
                 <p id="zweiText02">Mir verzeue dir vo üsere Zit im Gymer z’Langetau und vo de Struggles womer dert hei gha.</p>
 
 
-
-    <div id="boxFolgeEins"></div>
         <iframe id="spotifyEins" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3RYgnX5tefDWiuMkkz3xhU?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <h3 id="einsTitel">#01 wär si mir</h3>
             <p id="einsText">Ih üsere erste Foug steue mir üs und üses Projekt vor. Mir hoffe sehr dses dir gfaut und du Lust hesch üs no meh zuezlose!</p>
@@ -136,8 +145,9 @@
         <a href="mailto:gleis50.ch@gmail.com" id="mail">gleis50.ch@gmail.com</a>
     </footer>
 
-    <script src="js/allgemein.js"></script>    
+    <!-- <script src="js/allgemein.js"></script>     -->
     <script src="js/allefolgen.js"></script>
+    <script src="js/header.js"></script>
 
 </body>
 </html>

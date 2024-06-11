@@ -1,30 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.getElementById('header');
-    let lastScrollTop = 0;
-    let hasScrolled = false;
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Script loaded");
+    var burgerMenu = document.getElementById("burger-menu");
+    var dropdownMenu = document.getElementById("dropdown-menu");
+    var overlay = document.getElementById("overlay");
+    var closeButton = document.getElementById("close-button");
 
-    window.addEventListener('scroll', () => {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    function closeDropdown() {
+        dropdownMenu.classList.add("hidden");
+        dropdownMenu.style.display = "none";
+        overlay.classList.add("hidden");
+    }
 
-        if (scrollTop > 0 && !hasScrolled) {
-            header.classList.remove('hidden');
-            header.classList.add('headerVisible');
-            hasScrolled = true;
+    burgerMenu.addEventListener("click", function() {
+        console.log("Burger menu clicked");
+        if (dropdownMenu.classList.contains("hidden")) {
+            dropdownMenu.classList.remove("hidden");
+            dropdownMenu.style.display = "flex"; // Ensure the dropdown is displayed
+            overlay.classList.remove("hidden");
+        } else {
+            closeDropdown();
         }
-
-        if (scrollTop > lastScrollTop) {
-            // Scroll down
-            header.classList.add('headerVisible');
-        } else if (scrollTop < lastScrollTop && scrollTop > 0) {
-            // Scroll up
-            header.classList.add('headerVisible');
-        } else if (scrollTop === 0) {
-            // At the top of the page
-            header.classList.remove('headerVisible');
-            header.classList.add('hidden');
-            hasScrolled = false;
-        }
-
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
     });
+
+    overlay.addEventListener("click", closeDropdown);
+    closeButton.addEventListener("click", closeDropdown);
 });
