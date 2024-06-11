@@ -4,27 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gleis50.ch | Startseite</title>
-    <!-- <link rel="stylesheet" href="css/allgemein.css"> -->
+    <link rel="stylesheet" href="css/allgemein.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.typekit.net/tpw4fhi.css">
     <link rel="stylesheet" href="https://use.typekit.net/nvb5pwa.css">
+    
 </head>
+
+
 <body>
+    <header id="header" class="hidden">
+        <img src="bilder/Logo_Gleis50_2024.png" id="logoHeader" class="logoHeader hidden" alt="gleis50_logo">
+
+        <div id="menu">
+            <div id="left-menu">
+                <a class="headerLinks" href="index.html">START</a>
+                <a class="headerLinks" href="allefolgen.html">AUI FOUGE</a>
+            </div>
+            <img src="bilder/Logo_Gleis50_2024.png" id="headerLogo" alt="gleis50_logo">
+            <div id="right-menu">
+                <a class="headerLinks" href="ueberuns.html">ÜBER ÜS</a>
+                <a class="headerLinks" href="kontaktformular.html">KONTAKT</a>
+            </div>
+            <img src="bilder/MenuIcon.png" id="burger-menu" class="burger-menu" alt="Burger Menu">
+        </div>
+        <div id="dropdown-menu" class="dropdown-menu hidden">
+            <a class="headerLinks" href="index.html">START</a>
+            <a class="headerLinks" href="allefolgen.html">AUI FOUGE</a>
+            <a class="headerLinks" href="ueberuns.html">ÜBER ÜS</a>
+            <a class="headerLinks" href="kontaktformular.html">KONTAKT</a>
+        </div>
+    </header>
 
     <main>
+    <img src="bilder/Schild_Homepage.png" id="SchildStartseite" alt="Schild_Homepage">
+    <img src="bilder/Logo_Gleis50_2024.png" id="Logo" alt="gleis50_logo">
 
-    <h1>Schön bisch hie!</h1>
+    <h1>härzlech wiukomme bim Podcast</h1>
+    <h2>Gleis50</h2>
 
-    <p>
-        Ganz härzlech wiukomme uf dr Website vom Podcast "Gleis 50 - im Schnäuzug erwachsewärde" !
-        Wie de merksch si mir no viu im Ufbou vo üsere Website, häb aso no chly geduud :) 
-        <br>Bis dahin chasch afe bis uf Spotify verbig luege :)
-    </p>
 
-    <iframe id="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/show/1lPlwuHAHis77EQwsr9mTc?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div id="bannerFarbe"></div>
 
+    <marquee id="bannerText" direction="right" behavior="scroll" scrollamount="5" scrolldelay="1" >
+        jedi zwöiti Wuche zwöi neui Fouge -     
+        jedi zwöiti Wuche zwöi neui Fouge -  
+        jedi zwöiti Wuche zwöi neui Fouge -  
+        jedi zwöiti Wuche zwöi neui Fouge -   
+        jedi zwöiti Wuche zwöi neui Fouge
+    </marquee>
+
+
+    <img src="bilder/Schild_Homepage.png" class="schilderFacts" id="geschichte" alt="baluesSchild">
+    <img src="bilder/Uhr.png" id="uhr" alt="uhrIcon">
+    <h3 class="texteFacts" id="geschichteText">Dä Podcast isch es Projekt für üses Studium Multimedia Production ar FH in Bärn. De Zug isch üses "Maskotchen", wiu mir immer zäme heifahre und drüber rede, was üs so beschäftigt.</h3>
+    <a href="ueberuns.html" class="buttonMehr" id="projekt">S'PROJEKT</a>
+
+
+    <img src="bilder/Schild_Homepage.png" class="schilderFacts" id="zuUns" alt="baluesSchild">
+    <img src="bilder/Tickets_Facts.png" id="tickets" alt="ticketIcon">
+    <h3 class="texteFacts" id="zuUnsText">Mir si d'Wera und d'Nicole und hei üs im Studium lehre kenne. Es isch schnäu e ängeri Fründschaft entstange. Mir hei mega viu Ähnlechkeite u doch hei beidi ihri Eigeheite.</h3>
+    <a href="ueberuns.html" class="buttonMehr" id="uns">ÜBER ÜS</a>
+
+
+    <img src="bilder/Schild_Homepage.png" class="schilderFacts" id="ziel" alt="baluesSchild">
+    <img src="bilder/Ziel.png" id="standort" alt="standortIcon">
+    <h3 class="texteFacts" id="zielText">S'Ziu vo üsem Podcast isch Mönsche bi de autägleche Struggles vom Erwachsewärde z'ungerstütze und ihne s'Gfüeu zgä, dass sie verstange wärde.</h3>
+    <a href="ueberuns.html" class="buttonMehr" id="vision">ÜSI VISION</a>
+
+    <iframe id="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/show/1lPlwuHAHis77EQwsr9mTc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <div class="bt_carousel"></div>
+
+    <div id="blaueBox"></div>
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/df15d471ffff5248afb27c6743dd8a83.html" scrolling="no" allowtransparency="true" class="lightwidget-widget"></iframe>
+
+    <div id="fahrenderZug">
+        <img class="zug" id="zugRosa" src="bilder/ZugRosa.png" alt="Bewegendes Bild eines Zuges">
+    </div>
 
 </main>
 
+<footer>
+    <div id="footerContent">
+        <a href="index.html" class="footerText" id="footerStart">START</a>
+        <a href="allefolgen.html" class="footerText" id="footerFolgen">AUI FOUGE</a>
+        <a href="ueberuns.html" class="footerText" id="footerAbout">ÜBER ÜS</a>
+        <a href="kontaktformular.html" class="footerText" id="footerKontakt">KONTAKT</a>
+    </div>
+    <div id="logoContainer">
+        <img src="bilder/Logo_Gleis50_2024.png" id="LogoFooter" alt="Footer Logo">
+    </div>
+    <div id="socialContainer">
+        <a href="https://www.instagram.com/gleis50.ch/" target="_blank" class="socialLink" id="instagramLink">
+            <img src="bilder/InstagramIcon.png" class="socialMediaIcon" id="instagram" alt="Instagram Icon">
+            <img src="bilder/InstagramIconHover.png" class="socialMediaIcon hover" alt="Instagram Hover Icon">
+        </a>
+        <a href="https://open.spotify.com/show/1lPlwuHAHis77EQwsr9mTc?si=34d99bb5974845ca" target="_blank" class="socialLink" id="spotifyLink">
+            <img src="bilder/SpotifyIcon.png" class="socialMediaIcon" id="spotify" alt="Spotify Icon">
+            <img src="bilder/SpotifyIconHover.png" class="socialMediaIcon hover" alt="Spotify Hover Icon">
+        </a>
+        <a href="https://podcasts.apple.com/ch/podcast/gleis-50-im-schn%C3%A4uzug-erwachsew%C3%A4rde/id1745064210" target="_blank" class="socialLink" id="appleLink">
+            <img src="bilder/ApplePodcastIcon.png" class="socialMediaIcon" id="apple" alt="Apple Podcasts Icon">
+            <img src="bilder/AppleIconHover.png" class="socialMediaIcon hover" alt="Apple Podcasts Hover Icon">
+        </a>
+    </div>
+    <a href="mailto:gleis50.ch@gmail.com" id="mail">gleis50.ch@gmail.com</a>
+</footer>
+
+<script src="js/index.js"></script>
+<script src="js/header.js"></script>
+
+
 </body>
 </html>
+
+
