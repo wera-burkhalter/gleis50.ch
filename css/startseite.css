@@ -1,3 +1,5 @@
+
+
 #SchildStartseite {
     height: 110%;
     grid-column: 2 / span 12;
@@ -710,33 +712,67 @@ h2 {
             font-size: 1vh;
         }
 
-        header {
-            backdrop-filter: none !important; /* Entferne den Blur-Effekt */
-            -webkit-backdrop-filter: none !important; /* Entferne den Blur-Effekt für Safari */
-        }
+
+
         .headerLinks {
-            display: none; /* Hide header links */
+            text-decoration: none;
+            color: #CC9999;
+            padding: 10px;
         }
-        #headerLogo {
-            display: none; /* Hide the header logo */
-        }
-        #menu {
-            margin-top: 0; /* Verringere den oberen Rand des Menüs */
-        }
-        #left-menu, #right-menu {
-            display: none; /* Hide left and right menus */
-        }
-        .burger-menu {
+
+        #burger-menu {
             display: block; /* Show the burger menu icon */
             position: absolute;
             right: 5%;
-            top: 15%;
+            top: 30%;
             height: 15vw;
-        }
-        .dropdown-menu {
-            display: none; /* Initially hidden */
-            flex-direction: column;
+            cursor: pointer;
         }
 
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+        }
 
+        .headerLinks {
+            display: none; /* Hide header links */
+        }
+
+        #headerLogo {
+            display: none; /* Hide the header logo */
+        }
+
+        #left-menu, #right-menu {
+            display: none; /* Hide left and right menus */
+        }
+
+        .logoHeader {
+            display: block;
+            height: 50%;
+            margin-top: 0;
+            margin-left: 5%;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 10; /* Ensure the overlay is above other elements */
+        }
+
+        .close-button {
+            position: absolute;
+            top: 15px;
+            right: 40px;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 30; /* Ensure the close button is above other elements */
+            color: #CC9999;
+        }
+    
+    
 }

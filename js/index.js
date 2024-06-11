@@ -83,13 +83,12 @@
 //     }
 // });
 
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('header');
     const burgerMenu = document.getElementById('burger-menu');
     const dropdownMenu = document.getElementById('dropdown-menu');
+    const overlay = document.getElementById('overlay');
+    const closeButton = document.getElementById('close-button');
     let lastScrollTop = 0;
     let hasScrolled = false;
 
@@ -119,6 +118,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     burgerMenu.addEventListener('click', () => {
-        dropdownMenu.classList.toggle('hidden');
+        dropdownMenu.classList.toggle('show');
+        overlay.classList.toggle('hidden');
+    });
+
+    overlay.addEventListener('click', () => {
+        dropdownMenu.classList.remove('show');
+        overlay.classList.add('hidden');
+    });
+
+    closeButton.addEventListener('click', () => {
+        dropdownMenu.classList.remove('show');
+        overlay.classList.add('hidden');
     });
 });
