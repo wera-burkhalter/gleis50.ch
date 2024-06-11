@@ -175,7 +175,7 @@ h2 {
 }
 
 
-
+/* 
 .bt_carousel {
     grid-column: 2 / span 12;
     grid-row: 45 / span 5;
@@ -250,7 +250,7 @@ h2 {
 
 .carousel-button:hover {
     background-color: #568098;
-}
+} */
 
 #fahrenderZug {
     grid-row: 75 / span 5;
