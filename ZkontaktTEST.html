@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformular</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Kontaktformular -->
+    <form id="contactForm" action="ZkontaktTest.php" method="post">
+        <!-- Eingabefeld für den Namen -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Eingabefeld für die E-Mail -->
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Auswahlfeld für den Kontaktgrund -->
+        <label for="reason">Kontaktgrund:</label>
+        <select id="reason" name="reason" required>
+            <option value="Frage">Frage</option>
+            <option value="Idee">Idee</option>
+        </select>
+
+        <!-- Textfeld für die Nachricht -->
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Absendebutton -->
+        <button type="submit">Absenden</button>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
