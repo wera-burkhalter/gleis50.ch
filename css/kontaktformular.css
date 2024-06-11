@@ -1,19 +1,5 @@
 /* ou im allgemein.css (body& main) */
 /* ALLGEMEINS */
-body{
-    background-color: #A97F67;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden; /* Verhindert horizontales Scrollen */
-}
-
-main{
-    display: grid;
-    grid-template-columns: 40px repeat(12, 1fr) 40px;
-    grid-auto-rows: 50px;
-}
-
 
 #SchildStartseite {
     height: 90%;
@@ -89,11 +75,68 @@ p{
 
 
 /* *** */
+.tituKontakt{
+    grid-column: 3 / span 10;
+    grid-row: 21 / span 1;
+    text-align: center; 
+    font-size: 130px;
+    font-family: "hoss-round", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(204, 153, 153);
+
+}
+
+.textKontakt{
+    grid-column: 3 / span 10;
+    grid-row: 26 / span 1;
+    text-align: center;
+    font-size: 25px;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #CC9999;
+}
 
 /* KONTAKTFORMULAR */
 .Kontaktformular{
     grid-column: 3 / span 10;
-    grid-row: 50 / span 1;
+    grid-row: 32 / span 20;
+    text-align: center;
+    font-size: 30px;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*form{
+    background-color: #568098;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+}*/
+
+/* Stile für Formularfelder und Labels */
+label {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #CC9999;
+}
+
+
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #568098;
+    border: none;
+    border-radius: 15px;
+    /* Schrift */
+    color: #CC9999;
     text-align: center;
     font-size: 20px;
     font-family: "pill-gothic-600mg", sans-serif;
@@ -101,38 +144,69 @@ p{
     font-style: normal;
 }
 
-form{
-    background-color: #568098;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: auto;
-}
-
-/* Stile für Formularfelder und Labels */
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333333;
-}
-
-input, select, textarea, button {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 3px;
-}
-
 /* Stile für den Absendebutton */
 button {
     background-color: #568098;
-    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: "pill-gothic-600mg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #CC9999;
     border: none;
+    border-radius: 15px;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #466080;
+}
+
+/* KONTAKTFORMULAR ENDE */
+
+#fahrenderZug {
+    grid-column: 1 / span 14;
+    grid-row: 50 / span 5;
+    position: relative;
+    overflow: hidden;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px){
+    main{
+        grid-template-columns: 20px repeat(12, 1fr) 20px;
+    }
+
+    /* Diverses */
+    h2 {
+        grid-row: 6 /span 1;
+        font-size: 10vw;
+    }
+
+    /* Schild Startseite */
+    #SchildStartseite {
+        max-width: 100%;
+        max-height: 80%;
+        grid-column: 4 / span 12;
+        grid-row: 6 / span 14;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 10vw;
+        grid-column: 4 / span 12;
+        grid-row: 9 /span 2;
+        text-align: center;
+    }
+
+    /* Banner */
+    #bannerFarbe {
+        width: 100%;
+    }
+
+    #bannerText {
+        grid-row: 17 / span 1;
+        font-size: 2.5vh;
+    }
+    
 }
