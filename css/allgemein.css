@@ -57,12 +57,36 @@ header {
     margin: 0 20px; /* Adjust the margin to control space around the logo */
 }
 
+/* Burger Menu Styles */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    height: 9vh;
+}
 
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    background-color: #568098;
+    width: 100%;
+    text-align: center;
+}
 
+.dropdown-menu a {
+    padding: 10px 0;
+    border-bottom: 1px solid #CC9999;
+}
 
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
 
-
-
+.logoHeader {
+    display: none;
+}
 
 #fahrenderZug {
     grid-column: 1 / span 14;

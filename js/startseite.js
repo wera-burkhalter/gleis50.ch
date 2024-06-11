@@ -82,3 +82,13 @@ document.addEventListener('DOMContentLoaded', function() {
         carouselItemsContainer.style.transform = `translateX(${newTransform}px)`;
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerMenu = document.getElementById('burger-menu');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    burgerMenu.addEventListener('click', function() {
+        dropdownMenu.classList.toggle('show');
+    });
+});
