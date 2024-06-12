@@ -12,19 +12,31 @@
 
 </head>
 
-<header>
-    <div id="menu">
-        <div id="left-menu">
-            <a class="headerLinks" href="index.html">START</a>
-            <a class="headerLinks" href="allefolgen.html">AUI FOUGE</a>
-        </div>
-        <img src="bilder/Logo_Gleis50_2024.png" id="headerLogo" alt="gleis50_logo">
-        <div id="right-menu">
-            <a class="headerLinks" href="ueberuns.html">ÜBER ÜS</a>
-            <a class="headerLinks" href="kontaktformular.html">KONTAKT</a>
-        </div>
+<header id="header">
+    <img src="bilder/Logo_Gleis50_2024.png" id="logoHeader" class="logoHeader" alt="gleis50_logo">
+<div id="menu">
+    <div id="left-menu">
+        <a class="headerLinks" href="index.html">START</a>
+        <a class="headerLinks" href="allefolgen.html">AUI FOUGE</a>
     </div>
+    <a href="index.html">
+    <img src="bilder/Logo_Gleis50_2024.png" id="headerLogo" alt="gleis50_logo">
+    </a>
+    <div id="right-menu">
+        <a class="headerLinks" href="ueberuns.html">ÜBER ÜS</a>
+        <a class="headerLinks" href="kontaktformular.html">KONTAKT</a>
+    </div>
+    <img src="bilder/MenuIcon.png" id="burger-menu" class="burger-menu" alt="Burger Menu">
+</div>
+<div id="dropdown-menu" class="dropdown-menu hidden">
+    <span id="close-button" class="close-button">&times;</span>
+    <a class="headerLinks" href="index.html">START</a>
+    <a class="headerLinks" href="allefolgen.html">AUI FOUGE</a>
+    <a class="headerLinks" href="ueberuns.html">ÜBER ÜS</a>
+    <a class="headerLinks" href="kontaktformular.html">KONTAKT</a>
+</div>
 </header>
+<div id="overlay" class="overlay hidden"></div>
 
 <body>
 
@@ -149,5 +161,6 @@
         <a href="mailto:gleis50.ch@gmail.com" id="mail">gleis50.ch@gmail.com</a>
     </footer>
     <script src="js/kontaktformular.js"></script>
+    <script src="js/header.js"></script>
 </body>
 </html>
