@@ -165,7 +165,7 @@ h4 {
         transform: translateY(-50%);
         background-color: transparent;
         border: none;
-        font-size: 2.5em;
+        font-size: 2em;
         cursor: pointer;
         color: #CC9999;
         font-family: "hoss-round", sans-serif;
@@ -224,7 +224,7 @@ h4 {
     transform: translateY(-50%);
     background-color: transparent;
     border: none;
-    font-size: 2.5em;
+    font-size: 2em;
     cursor: pointer;
     color: #CC9999;
     font-family: "hoss-round", sans-serif;
@@ -747,8 +747,11 @@ color: #A97F67;
     #nextButtonVier{
         grid-row: 40 / span 1;
         grid-column: 13 / span 2;
-        margin-left: -30%;
+        margin-left: -25%;
         font-size: 2em;
+    }
+    #nextButtonVier:hover {
+        color: #A97F67;
     }
     #vierTitel {
         grid-row: 43 / span 1;
@@ -798,10 +801,13 @@ color: #A97F67;
     #nextButtonDrei{
         grid-column: 13 / span 2;
         grid-row: 51 / span 1;
-        margin-left: -30%;
+        margin-left: -25%;
         font-size: 2em;
         margin-top: -10%;
     }
+    #nextButtonDrei:hover {
+        color: #568098;
+        }
     #dreiTitel {
         grid-column: 2 / span 12;
         grid-row: 54 / span 1;
@@ -855,9 +861,12 @@ color: #A97F67;
         grid-column: 13 / span 2;
         grid-row: 61 / span 1;
         margin-top: 10%;
-        margin-left: -30%;
+        margin-left: -25%;
         font-size: 2em;
     }
+    #nextButtonZwei:hover {
+        color: #A97F67;
+        }
     #zweiTitel {
         grid-column: 2 / span 12;
         grid-row: 64 / span 1;
