@@ -232,7 +232,7 @@ button:hover {
 
 
 #fahrenderZug {
-    grid-row: 85 / span 2;
+    grid-row: 50 / span 4;
     overflow: hidden;
 }
 
