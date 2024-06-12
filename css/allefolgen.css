@@ -22,8 +22,6 @@ h1 {
     grid-column: 1 / span 14;
     grid-row: 20 / span 1;
     width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
 }
 #bannerText {
     color: #CC9999;
@@ -32,18 +30,6 @@ h1 {
     grid-column: 1 / span 14;
     grid-row: 20 / span 1;
     align-self: center;
-    display: inline-block;
-    padding-left: 100%;
-    margin-top: 0.5%;
-    animation: scrollText 60s linear infinite;
-}
-@keyframes scrollText {
-    0% {
-        transform: translateX(-50%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
 }
 
 
@@ -81,7 +67,6 @@ h4 {
     grid-row: 26 / span 8;
     width: 100%;
     height: 150%;
-    border: none;
 }
 /* #nextButtonFünf{
         grid-column: 7 / span 1;
