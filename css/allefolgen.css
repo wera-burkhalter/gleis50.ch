@@ -623,7 +623,7 @@ color: #A97F67;
     }
 }
 
-@media (max-width: 545px) {
+@media (min-width: 300px) and (max-width: 545px) {
     #SchildStartseite {
         max-width: 100%;
         max-height: 50%;
