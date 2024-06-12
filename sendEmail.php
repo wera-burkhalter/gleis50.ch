@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Formularwerte abrufen und bereinigen
     $name = htmlspecialchars($_POST['name']);
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $reason = htmlspecialchars($_POST['reason']);
+    /*$reason = htmlspecialchars($_POST['reason']);*/
     $message = htmlspecialchars($_POST['message']);
 
     // E-Mail-Adresse, an die die Nachricht gesendet wird
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Inhalt der E-Mail
     $emailContent = "Name: $name\n";
     $emailContent .= "E-Mail: $email\n";
-    $emailContent .= "Kontaktgrund: $reason\n";
+    /*$emailContent .= "Kontaktgrund: $reason\n";*/
     $emailContent .= "Nachricht:\n$message\n";
 
     // E-Mail-Header
