@@ -626,10 +626,11 @@ color: #568098;
     #SchildStartseite {
         max-width: 100%;
         max-height: 50%;
-        grid-row: 2 / span 14;
+        grid-row: 3 / span 14;
+
     }
     h1 {
-        grid-row: 4 /span 3;
+        grid-row: 5 /span 3;
         font-size: 12vw;
     }
     p {
