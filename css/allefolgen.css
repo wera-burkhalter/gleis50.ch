@@ -750,7 +750,7 @@ color: #A97F67;
         margin-left: -25%;
         font-size: 2em;
     }
-    #nextButtonVier:hover {
+    #nextButtonVier:focus {
         color: #A97F67;
     }
     #vierTitel {
@@ -805,7 +805,7 @@ color: #A97F67;
         font-size: 2em;
         margin-top: -10%;
     }
-    #nextButtonDrei:hover {
+    #nextButtonDrei:focus {
         color: #568098;
         }
     #dreiTitel {
@@ -864,7 +864,7 @@ color: #A97F67;
         margin-left: -25%;
         font-size: 2em;
     }
-    #nextButtonZwei:hover {
+    #nextButtonZwei:focus {
         color: #A97F67;
         }
     #zweiTitel {
