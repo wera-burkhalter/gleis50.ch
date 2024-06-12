@@ -132,26 +132,27 @@ ul{
 
 /* Ds si mir */
 #dsSiMir{
-    grid-column: 1 / span 20;
+    grid-column: 1 / span 15;
     grid-row: 35 / span 11;
 }
 
-.teamMitglied {
+/*.teamMitglied {
     grid-column: 1 / span 20;
     grid-row: 40 / span 11;
     padding: 20px;
+}*/
+
+.teamMitglied {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-column: 1 / span 20;
+    grid-row: 40 / span 11;
 }
 
 .teamFoto {
     width: 395px;
     height: 531.5px;
-}
-
-.teamMitgliedWera {
-    margin: 10px;
-}
-.teamMitgliedNicole {
-    margin: 10px;
 }
 
 .team-member h4 {
@@ -167,6 +168,7 @@ ul{
 .team-member ul li {
     margin-bottom: 5px;
 }
+
 
 
 
@@ -207,7 +209,7 @@ ul{
 /* FOOTER */
 #fahrenderZug {
     grid-column: 1 / span 14;
-    grid-row: 80 / span 5;
+    grid-row: 150 / span 5;
     position: relative;
     overflow: hidden;
 }
@@ -391,7 +393,7 @@ footer {
         grid-column: 1 / span 20;
         grid-row: 37 / span 11;
         padding: 20px;
-    }
+    }*/
 
     /* Footer */
     .socialMediaIcon {
@@ -404,6 +406,11 @@ footer {
     #mail {
         font-size: 1.5vh;
     }
+
+    #fahrenderZug {
+        grid-row: 80 / span 4;
+    }
+
 }
 
 
@@ -454,9 +461,9 @@ footer {
     #dsSiMir {
         grid-row: 23 / span 10;
     }
-    .teamMitglied {
+    /*.teamMitglied {
         grid-row: 25 / span 50;
-    }
+    }*/
     .teamMitglied img {
         margin-top: 15px;
         width: 75%;
@@ -469,6 +476,14 @@ footer {
         margin: 10px;
     }
 
+    #teamWera {
+        grid-row: 25 / span 25;
+    }
+
+    #teamNicole {
+        grid-row: 50 / span 25;
+    }
+
     
     .teamListe {
         margin-top: 10px;
@@ -476,7 +491,7 @@ footer {
     }
     
     #üsesProjekt {
-        grid-row: 64 / span 8;
+        grid-row: 75 / span 10;
     }
 
     /* HEADER */
@@ -551,6 +566,6 @@ footer {
         }
 
     #fahrenderZug {
-        grid-row: 76 / span 2;
+        grid-row: 87 / span 2;
     }
 }
