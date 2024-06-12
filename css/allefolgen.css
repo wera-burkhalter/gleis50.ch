@@ -67,6 +67,7 @@ h4 {
     grid-row: 26 / span 8;
     width: 100%;
     height: 150%;
+    border: none;
 }
 /* #nextButtonFünf{
         grid-column: 7 / span 1;
@@ -82,7 +83,7 @@ h4 {
         font-family: "hoss-round", sans-serif;
 } */
 #nextButtonFünf:hover {
-    color: #568098;
+    color: #A97F67;
 }
 #fünfTitel {
     grid-column: 7 / span 7;
@@ -170,7 +171,7 @@ h4 {
         font-family: "hoss-round", sans-serif;
 }
 #nextButtonVier:hover {
-    color: #568098;
+    color: #A97F67;
 }
 #vierTitel {
     grid-column: 7 / span 7;
@@ -229,7 +230,7 @@ h4 {
     font-family: "hoss-round", sans-serif;
 }
 #nextButtonDrei:hover {
-color: #A97F67;
+color: #568098;
 }
 #dreiTitel {
     grid-column: 7 / span 7;
@@ -296,7 +297,7 @@ color: #A97F67;
     font-family: "hoss-round", sans-serif;
 }
 #nextButtonZwei:hover {
-color: #568098;
+color: #A97F67;
 }
 #zweiTitel {
     grid-column: 7 / span 7;
@@ -747,7 +748,7 @@ color: #568098;
         grid-row: 40 / span 1;
         grid-column: 13 / span 2;
         margin-left: -30%;
-        font-size: 3em;
+        font-size: 2em;
     }
     #vierTitel {
         grid-row: 43 / span 1;
@@ -798,7 +799,7 @@ color: #568098;
         grid-column: 13 / span 2;
         grid-row: 51 / span 1;
         margin-left: -30%;
-        font-size: 3em;
+        font-size: 2em;
         margin-top: -10%;
     }
     #dreiTitel {
@@ -855,7 +856,7 @@ color: #568098;
         grid-row: 61 / span 1;
         margin-top: 10%;
         margin-left: -30%;
-        font-size: 3em;
+        font-size: 2em;
     }
     #zweiTitel {
         grid-column: 2 / span 12;
