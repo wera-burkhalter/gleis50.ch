@@ -1,12 +1,17 @@
-body{
+body {
     background-color: #A97F67;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mindesthöhe für den gesamten Viewport */
 }
 
-main{
+main {
     display: grid;
     grid-template-columns: 40px repeat(12, 1fr) 40px;
     grid-auto-rows: 50px;
+    flex: 1; /* Füllt den verfügbaren Platz */
+    position: relative;
 }
 
 
@@ -95,9 +100,9 @@ header {
 
 
 
+
 #fahrenderZug {
     grid-column: 1 / span 14;
-    grid-row: 65 / span 5;
     position: relative;
     overflow: hidden;
 }
@@ -146,6 +151,13 @@ footer {
 
 .footerText:hover {
     color: #A97F67; /* Farbe beim Hover */
+}
+
+#datenschutzFooter {
+    grid-column: 2 / span 8;
+    justify-self: center;
+    font-size: 0.9vh;
+    color: #CC9999;
 }
 
 #logoContainer {
@@ -215,5 +227,3 @@ footer {
 #mail:hover {
     color: #A97F67; /* Farbe beim Hover */
 }
-
-

@@ -25,7 +25,7 @@ h1 {
 }
 #bannerText {
     color: #CC9999;
-    font-family: pill-gothic, sans-serif;
+    font-family: "pill-gothic", sans-serif;
     font-size: 4vh;
     grid-column: 1 / span 14;
     grid-row: 20 / span 1;
@@ -44,7 +44,7 @@ h3 {
     color: #CC9999;
 }
 h4 {
-    font-family: pill-gothic, sans-serif;
+    font-family: "pill-gothic", sans-serif;
     font-size: 1.8vw;
     color: #CC9999;
 }
@@ -375,6 +375,7 @@ color: #A97F67;
 
     p {
         font-size: 2.3vw;
+        line-height: 95%;
     }
     h4 {
         font-size: 2.5vw;
@@ -623,7 +624,7 @@ color: #A97F67;
     }
 }
 
-@media (min-width: 300px) and (max-width: 545px) {
+@media screen and (max-width: 545px) {
     #SchildStartseite {
         max-width: 100%;
         max-height: 50%;
@@ -680,15 +681,16 @@ color: #A97F67;
     #fünfUnttitel01 {
         font-size: 3vw;
         grid-column: 2 / span 12;
-        grid-row: 24 / span 1;
+        grid-row: 23 / span 1;
+        margin-top: 17%;
         margin-left: 4%;
     }
     #fünfText01 {
         font-size: 3vw;
-        grid-row: 25 / span 2;
+        grid-row: 24 / span 2;
         grid-column: 2 / span 11;
-        margin-top: 3%;
         margin-left: 4%;
+        margin-top: 13%;
     }
     /* #fünfUnttitel02 {
         font-size: 3vw;
@@ -721,10 +723,10 @@ color: #A97F67;
     }
     #specialText {
         font-size: 3vw;
-        grid-row: 34 / span 8;
+        grid-row: 33 / span 8;
         grid-column: 2 / span 12;
-        margin-top: 14%;
         margin-left: 4%;
+        margin-top: 19%;
     }
 
 
@@ -745,7 +747,7 @@ color: #A97F67;
         margin-top: 9%;
     }
     #nextButtonVier{
-        grid-row: 40 / span 1;
+        grid-row: 41 / span 1;
         grid-column: 13 / span 2;
         margin-left: -25%;
         font-size: 2em;
@@ -764,7 +766,7 @@ color: #A97F67;
         font-size: 3vw;
         grid-column: 2 / span 12;
         grid-row: 43 / span 1;
-        margin-top: 20%;
+        margin-top: 15%;
         margin-left: 4%;
     }
     #vierText01 {
@@ -803,7 +805,7 @@ color: #A97F67;
         grid-row: 51 / span 1;
         margin-left: -25%;
         font-size: 2em;
-        margin-top: -10%;
+        margin-top: 15%;
     }
     #nextButtonDrei:focus {
         color: #568098;
@@ -819,47 +821,47 @@ color: #A97F67;
         grid-row: 54 / span 1;
         font-size: 3vw;
         margin-left: 4%;
-        margin-top: 13%;
+        margin-top: 8%;
     }
     #dreiText01 {
         grid-column: 2 / span 11;
         grid-row: 55 / span 2;
-        margin-top: 3%;
         margin-left: 4%;
+        margin-top: 3%;
         font-size: 3vw;
     }
     #dreiUnttitel02 {
         grid-column: 2 / span 12;
-        grid-row: 55 / span 1;
+        grid-row: 56 / span 1;
         margin-left: 4%;
-        margin-top: 16%;
+        margin-top: 3%;
         font-size: 3vw;
     }
     #dreiText02 {
         grid-column: 2 / span 11;
         grid-row: 55 / span 2;
-        margin-top: 23%;
+        margin-top: 20%;
         margin-left: 4%;
         font-size: 3vw;
     } 
 
 
     #boxFolgeZwei {
-        grid-row: 58 / span 10;
+        grid-row: 59 / span 10;
     }
     #spotifyZwei1 {
-        grid-row: 59 / span 4;
+        grid-row: 60 / span 4;
         grid-column: 2 / span 12;
         width: 90%;
     }
     #spotifyZwei2 {
-        grid-row: 59 / span 4;
+        grid-row: 60 / span 4;
         grid-column: 2 / span 12;
         width: 90%;
     }
     #nextButtonZwei{
         grid-column: 13 / span 2;
-        grid-row: 61 / span 1;
+        grid-row: 62 / span 1;
         margin-top: 10%;
         margin-left: -25%;
         font-size: 2em;
@@ -869,22 +871,22 @@ color: #A97F67;
         }
     #zweiTitel {
         grid-column: 2 / span 12;
-        grid-row: 64 / span 1;
+        grid-row: 65 / span 1;
         font-size: 4vh;
         margin-left: 0;
     }
     #zweiUnttitel01 {
         grid-column: 2 / span 12;
-        grid-row: 64 / span 1;
+        grid-row: 65 / span 1;
         font-size: 3vw;
         margin-left: 4%;
-        margin-top: 13%;
+        margin-top: 7%;
     }
     #zweiText01 {
         grid-column: 2 / span 11;
-        grid-row: 64 / span 1;
+        grid-row: 65 / span 1;
         margin-left: 4%;
-        margin-top: 20%;
+        margin-top: 13%;
         font-size: 3vw;
     }
     #zweiUnttitel02 {
@@ -892,31 +894,32 @@ color: #A97F67;
         grid-row: 66 / span 1;
         font-size: 3vw;
         margin-left: 4%;
+        margin-top: 17%;
     }
     #zweiText02 {
         grid-column: 2 / span 11;
         grid-row: 66 / span 2;
         margin-left: 4%;
-        margin-top: 16%;
+        margin-top: 24%;
+        font-size: 3vw;
     }
 
 
     #spotifyEins {
-        grid-row: 69 / span 4;
+        grid-row: 70 / span 4;
         grid-column: 2 / span 14;
         width: 90%;
     }
     #einsTitel {
         grid-column: 2 / span 12;
-        grid-row: 74 / span 1;
+        grid-row: 75 / span 1;
         font-size: 4vh;
         margin-left: 0;
     }
     #einsText {
         font-size: 1.8vw;
         grid-column: 2 / span 11;
-        grid-row: 74 / span 8;
-        margin-top: 15%;
+        grid-row: 75 / span 8;
         margin-left: 4%;
         font-size: 3vw;
     } 
@@ -993,5 +996,383 @@ color: #A97F67;
 
     #fahrenderZug {
         grid-row: 80 / span 2;
+    }
+}
+
+
+@media (min-width: 300px) and (max-width: 435px) {
+    #SchildStartseite {
+        max-width: 100%;
+        max-height: 50%;
+        grid-row: 3 / span 14;
+
+    }
+    h1 {
+        grid-row: 5 /span 3;
+        font-size: 12vw;
+    }
+    p {
+        font-size: 2.3vw;
+    }
+    h4 {
+        font-size: 2.5vw;
+    }
+    /*BANNER*/
+    #bannerFarbe {
+        grid-row: 12 / span 2;
+        height: 25%;
+        align-self: center;
+    }
+    #bannerText {
+        grid-row: 12 / span 2;
+        font-size: 2vh;
+    }
+
+
+    #boxFolgeFünf {
+        grid-row: 18 / span 10;
+    }
+    #spotifyFünf1 {
+        grid-row: 19 / span 4;
+        grid-column: 2 / span 12;
+        width: 100%;
+    }
+    #spotifyFünf2 {
+        grid-row: 19 / span 4;
+        grid-column: 2 / span 12;
+        width: 100%;
+    }
+    /* #nextButtonFünf{
+        grid-row: 20 / span 1;
+        grid-column: 13 / span 2;
+        margin-left: -30%;
+        font-size: 3em;
+    } */
+    #fünfTitel {
+        grid-row: 24 / span 1;
+        grid-column: 2 / span 12;
+        font-size: 4vh;
+        margin-left: 0;
+    }
+    #fünfUnttitel01 {
+        font-size: 3vw;
+        grid-column: 2 / span 12;
+        grid-row: 24 / span 1;
+        margin-top: 13%;
+        margin-left: 4%;
+    }
+    #fünfText01 {
+        font-size: 3vw;
+        grid-row: 24 / span 2;
+        grid-column: 2 / span 11;
+        margin-left: 4%;
+        margin-top: 20%;
+    }
+    /* #fünfUnttitel02 {
+        font-size: 3vw;
+        grid-column: 2 / span 12;
+        grid-row: 34 / span 1;
+        margin-top: 17%;
+        margin-left: 4%;
+    }
+    #fünfText02 {
+        font-size: 3vw;
+        grid-row: 35 / span 2;
+        grid-column: 2 / span 11;
+        margin-top: 11%;
+        margin-left: 4%;
+    } */
+
+
+
+
+    #spotifySpecial {
+        grid-column: 2 / span 12;
+        grid-row: 29 / span 4;
+        width: 100%;
+    }
+    #speicalTitel {
+        grid-row: 34 / span 1;
+        grid-column: 2 / span 12;
+        font-size: 3.3vh;
+        margin-left: 0;
+    }
+    #specialText {
+        font-size: 3vw;
+        grid-row: 34 / span 8;
+        grid-column: 2 / span 12;
+        margin-left: 4%;
+    }
+
+
+    #boxFolgeVier {
+        grid-row: 37 / span 11;
+        margin-top: 6%;
+    }
+    #spotifyVier1 {
+        grid-row: 38 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
+        margin-top: 9%;
+    }
+    #spotifyVier2 {
+        grid-row: 38 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
+        margin-top: 9%;
+    }
+    #nextButtonVier{
+        grid-row: 41 / span 1;
+        grid-column: 13 / span 2;
+        margin-left: -25%;
+        font-size: 2em;
+    }
+    #nextButtonVier:focus {
+        color: #A97F67;
+    }
+    #vierTitel {
+        grid-row: 43 / span 1;
+        grid-column: 2 / span 12;
+        font-size: 4vh;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+    #vierUnttitel01 {
+        font-size: 3vw;
+        grid-column: 2 / span 12;
+        grid-row: 43 / span 1;
+        margin-top: 20%;
+        margin-left: 4%;
+    }
+    #vierText01 {
+        font-size: 3vw;
+        grid-row: 44 / span 2;
+        grid-column: 2 / span 11;
+        margin-left: 4%;
+        margin-top: 10%;
+    }
+    #vierUnttitel02 {
+        font-size: 3vw;
+        grid-column: 2 / span 12;
+        grid-row: 45 / span 1;
+        margin-left: 4%;
+    }
+    #vierText02 {
+        font-size: 3vw;
+        grid-row: 45 / span 2;
+        grid-column: 2 / span 11;
+        margin-left: 4%;
+    }
+
+
+    #spotifyDrei1 {
+        grid-row: 49 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
+    }
+    #spotifyDrei2 {
+        grid-row: 49 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
+    }
+    #nextButtonDrei{
+        grid-column: 13 / span 2;
+        grid-row: 51 / span 1;
+        margin-left: -25%;
+        font-size: 2em;
+        margin-top: 15%;
+    }
+    #nextButtonDrei:focus {
+        color: #568098;
+        }
+    #dreiTitel {
+        grid-column: 2 / span 12;
+        grid-row: 54 / span 1;
+        font-size: 4vh;
+        margin-left: 0;
+    }
+    #dreiUnttitel01 {
+        grid-column: 2 / span 12;
+        grid-row: 54 / span 1;
+        font-size: 3vw;
+        margin-left: 4%;
+        margin-top: 12%;
+    }
+    #dreiText01 {
+        grid-column: 2 / span 11;
+        grid-row: 55 / span 2;
+        margin-left: 4%;
+        margin-top: 3%;
+        font-size: 3vw;
+    }
+    #dreiUnttitel02 {
+        grid-column: 2 / span 12;
+        grid-row: 55 / span 1;
+        margin-left: 4%;
+        margin-top: 16%;
+        font-size: 3vw;
+    }
+    #dreiText02 {
+        grid-column: 2 / span 11;
+        grid-row: 55 / span 2;
+        margin-top: 22%;
+        margin-left: 4%;
+        font-size: 3vw;
+    } 
+
+
+    #boxFolgeZwei {
+        grid-row: 59 / span 10;
+    }
+    #spotifyZwei1 {
+        grid-row: 60 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
+    }
+    #spotifyZwei2 {
+        grid-row: 60 / span 4;
+        grid-column: 2 / span 12;
+        width: 90%;
+    }
+    #nextButtonZwei{
+        grid-column: 13 / span 2;
+        grid-row: 62 / span 1;
+        margin-top: 10%;
+        margin-left: -25%;
+        font-size: 2em;
+    }
+    #nextButtonZwei:focus {
+        color: #A97F67;
+        }
+    #zweiTitel {
+        grid-column: 2 / span 12;
+        grid-row: 65 / span 1;
+        font-size: 4vh;
+        margin-left: 0;
+    }
+    #zweiUnttitel01 {
+        grid-column: 2 / span 12;
+        grid-row: 65 / span 1;
+        font-size: 3vw;
+        margin-left: 4%;
+        margin-top: 13%;
+    }
+    #zweiText01 {
+        grid-column: 2 / span 11;
+        grid-row: 65 / span 1;
+        margin-left: 4%;
+        margin-top: 20%;
+        font-size: 3vw;
+    }
+    #zweiUnttitel02 {
+        grid-column: 2 / span 12;
+        grid-row: 66 / span 1;
+        font-size: 3vw;
+        margin-left: 4%;
+        margin-top: 20%;
+    }
+    #zweiText02 {
+        grid-column: 2 / span 11;
+        grid-row: 66 / span 2;
+        margin-left: 4%;
+        font-size: 3vw;
+        margin-top: 27%;
+    }
+
+
+    #spotifyEins {
+        grid-row: 70 / span 4;
+        grid-column: 2 / span 14;
+        width: 90%;
+    }
+    #einsTitel {
+        grid-column: 2 / span 12;
+        grid-row: 75 / span 1;
+        font-size: 4vh;
+        margin-left: 0;
+    }
+    #einsText {
+        font-size: 1.8vw;
+        grid-column: 2 / span 11;
+        grid-row: 76 / span 8;
+        margin-left: 4%;
+        font-size: 3vw;
+        margin-top: 1%;
+    } 
+
+
+
+    .headerLinks {
+        text-decoration: none;
+        color: #CC9999;
+        padding: 10px;
+    }
+    #burger-menu {
+        display: block; /* Show the burger menu icon */
+        position: absolute;
+        right: 5%;
+        top: 25%;
+        height: 15vw;
+        cursor: pointer;
+    }
+    .dropdown-menu a {
+        display: block;
+        padding: 10px;
+    }
+    header {
+        padding-bottom: 7%;
+    }
+    .headerLinks {
+        display: none; /* Hide header links */
+    }
+    #headerLogo {
+        display: none; /* Hide the header logo */
+    }
+    #left-menu, #right-menu {
+        display: none; /* Hide left and right menus */
+    }
+    .logoHeader {
+        display: block; 
+        height: 100%;
+        margin-top: 9%;
+        margin-left: 3%;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10; /* Ensure the overlay is above other elements */
+    }
+    .close-button {
+        position: absolute;
+        top: 15px;
+        right: 40px;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 30; /* Ensure the close button is above other elements */
+        color: #CC9999;
+    }
+
+
+        /*FOOTER*/
+        .socialMediaIcon {
+            height: 2vh;
+            max-width: 2vh;
+            margin-top: 35%;
+            margin-left: 30%;
+        }
+        .footerText {
+            font-size: 1vh;
+        }
+         #mail {
+            display: none
+        }
+
+    #fahrenderZug {
+        grid-row: 83 / span 2;
     }
 }
