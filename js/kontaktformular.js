@@ -24,11 +24,11 @@
             if (xhr.readyState === XMLHttpRequest.DONE) {
                 const responseMessage = document.getElementById('responseMessage');
                 if (xhr.status === 200) {
-                    responseMessage.textContent = 'Vielen Dank für Ihre Nachricht!';
+                    responseMessage.textContent = 'Merci viu mau für dini Nachricht!';
                     responseMessage.style.display = 'block';
                     document.getElementById('contactForm').reset();
                 } else {
-                    responseMessage.textContent = 'Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut.';
+                    responseMessage.textContent = 'Es het es Problem gäh bim sände vo dire Nachricht. Bitte probbiers später nomau.';
                     responseMessage.style.display = 'block';
                 }
             }

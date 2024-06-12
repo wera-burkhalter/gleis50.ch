@@ -128,7 +128,7 @@ ul{
 /* FOOTER */
 #fahrenderZug {
     grid-column: 1 / span 14;
-    grid-row: 103 / span 6;
+    grid-row: 100 / span 5;
     position: relative;
     overflow: hidden;
 }
